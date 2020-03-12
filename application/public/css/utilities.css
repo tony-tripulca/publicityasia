@@ -1,0 +1,404 @@
+/** ===========================================================
+ * Typography
+ * ============================================================ */
+
+@font-face {
+    font-family: "FtraHv";
+    src: url("../fonts/FtraHv.eot");
+    src: url("../fonts/FtraHv.eot?#iefix") format('embedded-opentype'), url("../fonts/FtraHv.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "FtraMd";
+    src: url("../fonts/FtraMd.eot");
+    src: url("../fonts/FtraMd.eot?#iefix") format('embedded-opentype'), url("../fonts/FtraMd.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Semi Bold";
+    src: url("../fonts/Montserrat-SemiBold.eot");
+    src: url("../fonts/Montserrat-SemiBold.eot?#iefix") format('embedded-opentype'), url("../fonts/Montserrat-SemiBold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Font classes */
+
+.ftra-heavy {
+    font-family: "FtraHv";
+}
+
+.ftra-medium {
+    font-family: "FtraMd";
+}
+
+.montserrat-semi-bold {
+    font-family: "font-family: "FtraMd";";
+}
+
+/* Font color */
+
+.text-red {
+    color: #ff0000;
+}
+
+.text-nero {
+    color: #252525;
+}
+
+/* Font size */
+.text-01 {
+    font-size: 0.1rem;
+}
+
+.text-08 {
+    font-size: 0.8rem;
+}
+
+.text-10 {
+    font-size: 1.0rem;
+}
+
+.text-15 {
+    font-size: 1.5rem;
+}
+
+.text-20 {
+    font-size: 2.0rem;
+}
+
+.text-25 {
+    font-size: 2.5rem;
+}
+
+.text-30 {
+    font-size: 3.0rem;
+}
+
+.text-35 {
+    font-size: 3.5rem;
+}
+
+.text-40 {
+    font-size: 4.0rem;
+}
+
+.text-45 {
+    font-size: 4.5rem;
+}
+
+/* Line height */
+.line-01 {
+    line-height: 0.1;
+}
+
+.line-05 {
+    line-height: 0.5;
+}
+
+.line-10 {
+    line-height: 1.0;
+}
+
+.line-15 {
+    line-height: 1.5;
+}
+
+.line-20 {
+    line-height: 2.0;
+}
+
+.line-25 {
+    line-height: 2.5;
+}
+
+.line-30 {
+    line-height: 3.0;
+}
+
+.line-35 {
+    line-height: 3.5;
+}
+
+/* Letter Spacing */
+.space-01 {
+    letter-spacing: 0.1px;
+}
+
+.space-10 {
+    letter-spacing: 1.0px;
+}
+
+.space-15 {
+    letter-spacing: 1.5px;
+}
+
+.space-20 {
+    letter-spacing: 2.0px;
+}
+
+.space-25 {
+    letter-spacing: 2.5px;
+}
+
+.space-30 {
+    letter-spacing: 3.0px;
+}
+
+.space-35 {
+    letter-spacing: 3.5px;
+}
+
+.space-40 {
+    letter-spacing: 4.0px;
+}
+
+.space-45 {
+    letter-spacing: 4.5px;
+}
+
+.space-50 {
+    letter-spacing: 5.0px;
+}
+
+.space-55 {
+    letter-spacing: 5.5px;
+}
+
+/** ===========================================================
+ * Background colors
+ * ============================================================ */
+
+.bg-red {
+    background-color: #ff0000;
+}
+
+.bg-nero {
+    background-color: #252525;
+}
+
+/** ===========================================================
+ * Small devices (landscape phones, 576px and up)
+ * ============================================================ */
+
+@media (min-width: 576px) {
+    /** ===========================================================
+     * Typography
+     * ============================================================ */
+
+    /* Font size */
+    .text-sm-01 {
+        font-size: 0.1rem;
+    }
+
+    .text-sm-10 {
+        font-size: 1.0rem;
+    }
+
+    .text-sm-20 {
+        font-size: 2.0rem;
+    }
+
+    .text-sm-30 {
+        font-size: 3.0rem;
+    }
+
+    .text-sm-35 {
+        font-size: 3.5rem;
+    }
+
+    /* Letter Spacing */
+    .space-sm-01 {
+        letter-spacing: 0.1px;
+    }
+
+    .space-sm-10 {
+        letter-spacing: 1.0px;
+    }
+
+    .space-sm-15 {
+        letter-spacing: 1.5px;
+    }
+
+    .space-sm-20 {
+        letter-spacing: 2.0px;
+    }
+
+    .space-sm-25 {
+        letter-spacing: 2.5px;
+    }
+
+    .space-sm-30 {
+        letter-spacing: 3.0px;
+    }
+
+    .space-sm-35 {
+        letter-spacing: 3.5px;
+    }
+
+    .space-sm-40 {
+        letter-spacing: 4.0px;
+    }
+
+    .space-sm-45 {
+        letter-spacing: 4.5px;
+    }
+
+    .space-sm-50 {
+        letter-spacing: 5.0px;
+    }
+
+    .space-sm-55 {
+        letter-spacing: 5.5px;
+    }
+
+    .space-sm-60 {
+        letter-spacing: 6.0px;
+    }
+
+    .space-sm-65 {
+        letter-spacing: 6.5px;
+    }
+}
+
+/** ===========================================================
+ * Medium devices (tablets, 768px and up)
+ * ============================================================ */
+
+@media (min-width: 768px) {}
+
+/** ===========================================================
+ * Large devices (desktops, 992px and up)
+ * ============================================================ */
+
+@media (min-width: 992px) {
+    /** ===========================================================
+     * Typography
+     * ============================================================ */
+
+    /* Font size */
+    .text-lg-01 {
+        font-size: 0.1rem;
+    }
+
+    .text-lg-10 {
+        font-size: 1.0rem;
+    }
+
+    .text-lg-20 {
+        font-size: 2.0rem;
+    }
+
+    .text-lg-30 {
+        font-size: 3.0rem;
+    }
+
+    .text-lg-35 {
+        font-size: 3.5rem;
+    }
+
+    .text-lg-40 {
+        font-size: 4.0rem;
+    }
+
+    .text-lg-45 {
+        font-size: 4.5rem;
+    }
+
+    .text-lg-50 {
+        font-size: 5.0rem;
+    }
+
+    /* Letter Spacing */
+    .space-lg-01 {
+        letter-spacing: 0.1px;
+    }
+
+    .space-lg-10 {
+        letter-spacing: 1.0px;
+    }
+
+    .space-lg-15 {
+        letter-spacing: 1.5px;
+    }
+
+    .space-lg-20 {
+        letter-spacing: 2.0px;
+    }
+
+    .space-lg-25 {
+        letter-spacing: 2.5px;
+    }
+
+    .space-lg-30 {
+        letter-spacing: 3.0px;
+    }
+
+    .space-lg-35 {
+        letter-spacing: 3.5px;
+    }
+
+    .space-lg-40 {
+        letter-spacing: 4.0px;
+    }
+
+    .space-lg-45 {
+        letter-spacing: 4.5px;
+    }
+
+    .space-lg-50 {
+        letter-spacing: 5.0px;
+    }
+
+    .space-lg-55 {
+        letter-spacing: 5.5px;
+    }
+}
+
+/** ===========================================================
+ * Extra large devices (large desktops, 1200px and up)
+ * ============================================================ */
+
+@media (min-width: 1200px) {
+    /** ===========================================================
+     * Typography
+     * ============================================================ */
+
+    /* Font size */
+    .text-xl-01 {
+        font-size: 0.1rem;
+    }
+
+    .text-xl-10 {
+        font-size: 1.0rem;
+    }
+
+    .text-xl-20 {
+        font-size: 2.0rem;
+    }
+
+    .text-xl-30 {
+        font-size: 3.0rem;
+    }
+
+    .text-xl-35 {
+        font-size: 3.5rem;
+    }
+
+    .text-xl-40 {
+        font-size: 4.0rem;
+    }
+
+    .text-xl-45 {
+        font-size: 4.5rem;
+    }
+
+    .text-xl-50 {
+        font-size: 5.0rem;
+    }
+}
