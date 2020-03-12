@@ -1,0 +1,81 @@
+.loader {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.holder {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    width: 200px;
+    height: 100px;
+    margin: auto auto;
+    padding: 0px;
+}
+
+.holder img {
+    position: absolute;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+}
+
+.cover {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 80px;
+    height: 22px;
+    background-image:
+        linear-gradient(to right,
+            red,
+            red 10%,
+            red 10%,
+            white 10%,
+            white 100%);
+}
+
+/** ===========================================================
+ * Small devices (landscape phones, 576px and up)
+ * ============================================================ */
+
+@media (min-width: 576px) {
+    .holder {
+        width: 400px;
+    }
+
+    .holder img {
+        width: 400px;
+    }
+
+    .cover {
+        width: 150px;
+        height: 43px;
+    }
+}
+
+/** ===========================================================
+ * Medium devices (tablets, 768px and up)
+ * ============================================================ */
+
+@media (min-width: 768px) {}
+
+/** ===========================================================
+ * Large devices (desktops, 992px and up)
+ * ============================================================ */
+
+@media (min-width: 992px) {}
+
+/** ===========================================================
+ * Extra large devices (large desktops, 1200px and up)
+ * ============================================================ */
+
+@media (min-width: 1200px) {}
