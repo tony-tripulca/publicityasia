@@ -11,7 +11,7 @@ var loader = {
                     this.loop(500);
                 }
             } else {
-                $('.loader').fadeTo(1000, 0);
+                $('.loader').fadeOut('slow');
             }
 
             $(this.element).css('background-image', `linear-gradient(to right,

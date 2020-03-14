@@ -56,7 +56,7 @@
     <title>PUBLICITYASIA | Public Relations, Entertainment and Celebrity PR</title>
 </head>
 
-<body class="overflow-hidden">
+<body>
     <div class="loader">
         <div class="holder">
             <img src="{{ asset('images/pa-logo-loader.png') }}">
