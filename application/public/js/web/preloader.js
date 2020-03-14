@@ -1,7 +1,7 @@
 var loader = {
     status: false,
     percent: 10,
-    element: ($('.cover')),
+    element: ($('.holder .lead-2')),
     loop: function(interval) {
         setTimeout(() => {
             if(this.percent <= 100) {
@@ -10,17 +10,21 @@ var loader = {
                 } else {
                     this.loop(500);
                 }
-                
+
             } else {
                 $('.loader').fadeOut('slow');
             }
 
-            $(this.element).css('background-image', `linear-gradient(to right,
+            $(this.element).css('background', `linear-gradient(to right,
                 red,
                 red 10%,
                 red ${this.percent+=2}%,
                 white ${this.percent+=5}%,
                 white 100%)`);
+            $(this.element).css('-webkit-background-clip', 'text');
+            $(this.element).css('background-clip', 'text');
+            $(this.element).css('-webkit-text-fill-color', 'transparent');
+            $(this.element).css('-moz-text-fill-color', 'transparent');
         }, interval);
     }
 }

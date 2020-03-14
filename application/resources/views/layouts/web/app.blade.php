@@ -58,9 +58,9 @@
 
 <body> 
     <div class="loader">
-        <div class="holder">
-            <img src="{{ asset('images/pa-logo-loader.png') }}">
-            <div class="cover"></div>
+        <div class="holder d-flex align-items-center justify-content-center">
+            <p class="lead-1 couture-bold text-xl-70 space-05">PUBLICITY</p>
+            <p class="lead-2 couture-bold text-xl-70 space-05">ASIA</p>
         </div>
     </div>
 

@@ -3,44 +3,33 @@
     z-index: 50;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #252525;
 }
 
 .holder {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 0;
-    width: 200px;
-    height: 100px;
-    margin: auto auto;
+    min-width: 100%;
+    height: 100%;
     padding: 0px;
 }
 
-.holder img {
-    position: absolute;
-    z-index: 2;
-    margin: 0px;
-    padding: 0px;
-    width: 200px;
+.holder .lead-1 {
+    color: white;
 }
 
-.cover {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 1;
-    width: 80px;
-    height: 22px;
-    background-image:
+.holder .lead-2 {
+    width: 300px;
+    margin-left: -20px;
+    background:
         linear-gradient(to right,
             red,
-            red 10%,
-            red 10%,
-            white 10%,
+            red 2%,
+            red 2%,
+            white 2%,
             white 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 /** ===========================================================

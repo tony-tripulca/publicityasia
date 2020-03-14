@@ -27,6 +27,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Couture Bold";
+    src: url("../fonts/couture-bld.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Font classes */
 
 .ftra-heavy {
@@ -39,6 +46,10 @@
 
 .montserrat-semi-bold {
     font-family: "font-family: "FtraMd";";
+}
+
+.couture-bold {
+    font-family: "Couture Bold";
 }
 
 /* Font color */
@@ -127,7 +138,15 @@
 
 /* Letter Spacing */
 .space-01 {
-    letter-spacing: 0.1px;
+    letter-spacing: -9.0px;
+}
+
+.space-05 {
+    letter-spacing: -5.0px;
+}
+
+.space-09 {
+    letter-spacing: -1.0px;
 }
 
 .space-10 {
@@ -400,5 +419,21 @@
 
     .text-xl-50 {
         font-size: 5.0rem;
+    }
+
+    .text-xl-55 {
+        font-size: 5.5rem;
+    }
+
+    .text-xl-60 {
+        font-size: 60rem;
+    }
+
+    .text-xl-65 {
+        font-size: 6.5rem;
+    }
+
+    .text-xl-70 {
+        font-size: 7.0rem;
     }
 }
