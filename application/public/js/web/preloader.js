@@ -10,6 +10,7 @@ var loader = {
                 } else {
                     this.loop(500);
                 }
+                
             } else {
                 $('.loader').fadeOut('slow');
             }
