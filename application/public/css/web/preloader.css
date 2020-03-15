@@ -7,7 +7,7 @@
 }
 
 .holder {
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     padding: 0px;
 }
@@ -17,8 +17,8 @@
 }
 
 .holder .lead-2 {
-    width: 300px;
-    margin-left: -20px;
+    width: 90px;
+    margin-left: -4px;
     background:
         linear-gradient(to right,
             red,
@@ -37,17 +37,9 @@
  * ============================================================ */
 
 @media (min-width: 576px) {
-    .holder {
-        width: 400px;
-    }
-
-    .holder img {
-        width: 400px;
-    }
-
-    .cover {
+    .holder .lead-2 {
         width: 150px;
-        height: 43px;
+        margin-left: -10px;
     }
 }
 
@@ -61,7 +53,12 @@
  * Large devices (desktops, 992px and up)
  * ============================================================ */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .holder .lead-2 {
+        width: 230px;
+        margin-left: -15px;
+    }
+}
 
 /** ===========================================================
  * Extra large devices (large desktops, 1200px and up)

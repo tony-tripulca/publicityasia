@@ -231,6 +231,18 @@
         font-size: 3.5rem;
     }
 
+    .text-sm-40 {
+        font-size: 4.0rem;
+    }
+
+    .text-sm-45 {
+        font-size: 4.5rem;
+    }
+
+    .text-sm-50 {
+        font-size: 5.0rem;
+    }
+
     /* Letter Spacing */
     .space-sm-01 {
         letter-spacing: 0.1px;
@@ -289,7 +301,97 @@
  * Medium devices (tablets, 768px and up)
  * ============================================================ */
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    /** ===========================================================
+     * Typography
+     * ============================================================ */
+
+    /* Font size */
+    .text-md-01 {
+        font-size: 0.1rem;
+    }
+
+    .text-md-10 {
+        font-size: 1.0rem;
+    }
+
+    .text-md-20 {
+        font-size: 2.0rem;
+    }
+
+    .text-md-30 {
+        font-size: 3.0rem;
+    }
+
+    .text-md-35 {
+        font-size: 3.5rem;
+    }
+
+    .text-md-40 {
+        font-size: 4.0rem;
+    }
+
+    .text-md-45 {
+        font-size: 4.5rem;
+    }
+
+    .text-md-50 {
+        font-size: 5.0rem;
+    }
+
+    /* Letter Spacing */
+    .space-md-01 {
+        letter-spacing: 0.1px;
+    }
+
+    .space-md-10 {
+        letter-spacing: 1.0px;
+    }
+
+    .space-md-15 {
+        letter-spacing: 1.5px;
+    }
+
+    .space-md-20 {
+        letter-spacing: 2.0px;
+    }
+
+    .space-md-25 {
+        letter-spacing: 2.5px;
+    }
+
+    .space-md-30 {
+        letter-spacing: 3.0px;
+    }
+
+    .space-md-35 {
+        letter-spacing: 3.5px;
+    }
+
+    .space-md-40 {
+        letter-spacing: 4.0px;
+    }
+
+    .space-md-45 {
+        letter-spacing: 4.5px;
+    }
+
+    .space-md-50 {
+        letter-spacing: 5.0px;
+    }
+
+    .space-md-55 {
+        letter-spacing: 5.5px;
+    }
+
+    .space-md-60 {
+        letter-spacing: 6.0px;
+    }
+
+    .space-md-65 {
+        letter-spacing: 6.5px;
+    }
+}
 
 /** ===========================================================
  * Large devices (desktops, 992px and up)
@@ -331,6 +433,22 @@
 
     .text-lg-50 {
         font-size: 5.0rem;
+    }
+
+    .text-lg-55 {
+        font-size: 5.5rem;
+    }
+
+    .text-lg-60 {
+        font-size: 6.0rem;
+    }
+
+    .text-lg-65 {
+        font-size: 6.5rem;
+    }
+
+    .text-lg-70 {
+        font-size: 7.0rem;
     }
 
     /* Letter Spacing */
@@ -426,7 +544,7 @@
     }
 
     .text-xl-60 {
-        font-size: 60rem;
+        font-size: 6.0rem;
     }
 
     .text-xl-65 {
