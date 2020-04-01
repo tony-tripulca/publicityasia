@@ -35,7 +35,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">ABOUT</button>
+	<button class="page-cta ftra-medium text-white">MENU</button>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
