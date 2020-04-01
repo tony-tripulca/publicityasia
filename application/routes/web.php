@@ -17,4 +17,5 @@ Route::group([
     'namespace' => 'Web'
 ], function() {
     Route::get('/', 'LandingPageController@home')->name('home');
+    Route::get('/menu', 'LandingPageController@menu')->name('menu');
 });

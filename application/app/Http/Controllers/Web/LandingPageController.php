@@ -10,4 +10,8 @@ class LandingPageController extends Controller
     public function home() {
         return view('web/landing/home');
     }
+
+    public function menu() {
+        return view('web/landing/menu');
+    }
 }

@@ -201,6 +201,30 @@
     background-color: #252525;
 }
 
+.bg-gray-1 {
+    background-color: #404040;
+}
+
+.bg-gray-2 {
+    background-color: #383838;
+}
+
+.bg-gray-3 {
+    background-color: #2e2e2e;
+}
+
+.bg-gray-4 {
+    background-color: #2a2a2a;
+}
+
+.bg-gray-5 {
+    background-color: #202020;
+}
+
+.bg-gray-6 {
+    background-color: #181818;
+}
+
 /** ===========================================================
  * Small devices (landscape phones, 576px and up)
  * ============================================================ */

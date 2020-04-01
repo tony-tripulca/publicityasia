@@ -121,6 +121,30 @@ body {
     content: "+";
 }
 
+#main-menu {
+    margin-top: 52px;
+}
+
+#main-menu .card {
+    border: none;
+}
+
+.menu-action button {
+    padding: 40px 20px;
+    text-align: left;
+}
+
+#main-menu #about .card-body {
+    padding: 40px 0px;
+}
+
+#main-menu #about .card-body {
+    background-image: url('../../images/profile.jpg');
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 /** ===========================================================
  * Small devices (landscape phones, 576px and up)
  * ============================================================ */
