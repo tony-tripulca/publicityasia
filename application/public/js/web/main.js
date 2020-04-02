@@ -60,6 +60,18 @@ $(() => {
         direction: 'vertical'
     });
 
+    // Articles carousel
+    _articles = $('#network .carousel-inner');
+    for (let i = 0; i < 15; i++) {
+
+        $(_articles).append(`
+            <div class="carousel-item ${ i == 0 ? 'active' : ''}">
+                <img src="application/public/images/articles/a${i}.jpg" class="d-block w-100" alt="...">
+            </div>
+        `);
+        
+    }
+
     $('.page-down-button').on('click', function(event) {
         $('.main').moveDown();
     });

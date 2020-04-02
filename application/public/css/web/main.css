@@ -121,6 +121,12 @@ body {
     content: "+";
 }
 
+
+#main-menu #about .card-body,
+#main-menu #services .card-body  {
+    padding: 40px 0px;
+}
+
 #main-menu {
     margin-top: 52px;
 }
@@ -130,19 +136,29 @@ body {
 }
 
 .menu-action button {
-    padding: 40px 20px;
+    padding: 40px 50px;
     text-align: left;
 }
 
 #main-menu #about .card-body {
-    padding: 40px 0px;
+    background-image: url('../../images/profile.jpg');
+    background-size: contain;
+	background-position: left center;
+	background-repeat: no-repeat;
 }
 
-#main-menu #about .card-body {
-    background-image: url('../../images/profile.jpg');
-    background-size: cover;
-	background-position: center center;
+#main-menu #services .card-body {
+    background-image: url('../../images/services.jpg');
+    background-size: contain;
+	background-position: right center;
 	background-repeat: no-repeat;
+}
+
+#main-menu #services .list-group-item {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
 }
 
 /** ===========================================================
