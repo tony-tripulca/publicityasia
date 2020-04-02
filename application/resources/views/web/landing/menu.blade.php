@@ -22,13 +22,13 @@
 
 @section('content')
 <div id="main-menu" class="accordion">
-    <div class="card">
-        <div class="menu-action bg-gray-1">
-            <button type="button" class="btn btn-block ftra-medium text-white text-20" data-toggle="collapse" data-target="#about">
+    <div class="card card-profile">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-1 ftra-medium text-white text-30" data-toggle="collapse" data-target="#profile">
                 PROFILE
             </button>
         </div>
-        <div id="about" class="collapse" data-parent="#main-menu">
+        <div id="profile" class="collapse" data-parent="#main-menu">
             <div class="card-body bg-gray-3 ftra-heavy text-15 text-white">
                 <div class="row no-gutters">
                     <div class="col-12 offset-lg-4 col-lg-7">
@@ -36,15 +36,15 @@
                     
                         <p>Founded in 2004, our track record and vast connections across media and entertainment allows us to activate some of the most popular campaign executions producing valuable media coverage, brand recall and effectively reaching target audiences.</p>
 
-                        <p>We don’t just make noise. We create impact.</p>
+                        <p>We don’t just make noise. We create <span class="text-red">impact.</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="menu-action bg-gray-2">
-            <button type="button" class="btn btn-block ftra-medium text-red text-20" data-toggle="collapse" data-target="#services">
+    <div class="card card-services">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-2 ftra-medium text-red text-30" data-toggle="collapse" data-target="#services">
                 SERVICES
             </button>
         </div>
@@ -81,9 +81,9 @@
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="menu-action bg-gray-3">
-            <button type="button" class="btn btn-block ftra-medium text-white text-20" data-toggle="collapse" data-target="#network">
+    <div class="card card-network">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-3 ftra-medium text-white text-30" data-toggle="collapse" data-target="#network">
                 NETWORK
             </button>
         </div>
@@ -107,61 +107,58 @@
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="menu-action bg-gray-4">
-            <button type="button" class="btn btn-block ftra-medium text-red text-20" data-toggle="collapse" data-target="#originals">
+    <div class="card card-originals">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-4 ftra-medium text-red text-30" data-toggle="collapse" data-target="#originals">
                 ORIGINALS
             </button>
         </div>
         <div id="originals" class="collapse" data-parent="#main-menu">
             <div class="card-body bg-nero ftra-heavy text-15 text-white">
                 <div class="row no-gutters">
-                    <div class="col-12">
-                        <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p>
-                    
-                        <p>Founded in 2004, our track record and vast connections across media and entertainment allows us to activate some of the most popular campaign executions producing valuable media coverage, brand recall and effectively reaching target audiences.</p>
-
-                        <p>We don’t just make noise. We create impact.</p>
+                    <div class="col-12 text-center">
+                        <p>ORIGINALS</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="menu-action bg-gray-5">
-            <button type="button" class="btn btn-block ftra-medium text-white text-20" data-toggle="collapse" data-target="#experiential">
+    <div class="card card-experiential">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-5 ftra-medium text-white text-30" data-toggle="collapse" data-target="#experiential">
                 EXPERIENTIAL
             </button>
         </div>
         <div id="experiential" class="collapse" data-parent="#main-menu">
             <div class="card-body bg-nero ftra-heavy text-15 text-white">
                 <div class="row no-gutters">
-                    <div class="col-12 col-lg-8">
-                        <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p>
-                    
-                        <p>Founded in 2004, our track record and vast connections across media and entertainment allows us to activate some of the most popular campaign executions producing valuable media coverage, brand recall and effectively reaching target audiences.</p>
-
-                        <p>We don’t just make noise. We create impact.</p>
+                    <div class="col-12 mb-5">
+                        <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <img src="{{ asset('images/leadingseries.png') }}" width="80%" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        
+                    </div>
+                    <div class="col-12 col-lg-4 text-right">
+                        <img src="{{ asset('images/idolfest.png') }}" width="50%" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="card">
-        <div class="menu-action bg-gray-6">
-            <button type="button" class="btn btn-block ftra-medium text-red text-20" data-toggle="collapse" data-target="#connect">
+    <div id="test" class="card card-connect">
+        <div class="menu-action">
+            <button type="button" class="btn-block collapsed bg-gray-6 ftra-medium text-red text-30" data-toggle="collapse" data-target="#connect">
                 CONNECT
             </button>
         </div>
         <div id="connect" class="collapse" data-parent="#main-menu">
             <div class="card-body bg-nero ftra-heavy text-15 text-white">
-                <div class="row no-gutters">
-                    <div class="col-12 col-lg-8">
-                        <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p>
-                    
-                        <p>Founded in 2004, our track record and vast connections across media and entertainment allows us to activate some of the most popular campaign executions producing valuable media coverage, brand recall and effectively reaching target audiences.</p>
-
-                        <p>We don’t just make noise. We create impact.</p>
+                <div class="row no-gutters h-100">
+                    <div class="col-12 h-100 d-flex align-items-end">
+                        <p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
                     </div>
                 </div>
             </div>
