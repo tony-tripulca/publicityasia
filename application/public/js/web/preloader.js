@@ -13,6 +13,7 @@ var loader = {
 
             } else {
                 $('.loader').fadeOut('slow');
+                $(window).scrollTop(0);
             }
 
             $(this.element).css('background', `linear-gradient(to right,

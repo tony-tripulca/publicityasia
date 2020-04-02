@@ -35,7 +35,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">MENU</button>
+	<a href="{{ route('menu') }}" class="page-cta ftra-medium text-white">MENU</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -49,7 +49,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">PROFILE</button>
+	<a href="{{ route('menu', ['page' => 'profile']) }}" class="page-cta ftra-medium text-white">PROFILE</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -62,7 +62,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">SERVICES</button>
+	<a href="{{ route('menu', ['page' => 'services']) }}" class="page-cta ftra-medium text-white">SERVICES</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -75,7 +75,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">NETWORK</button>
+	<a href="{{ route('menu', ['page' => 'network']) }}" class="page-cta ftra-medium text-white">NETWORK</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -88,7 +88,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">ORIGINALS</button>
+	<a href="{{ route('menu', ['page' => 'originals']) }}" class="page-cta ftra-medium text-white">ORIGINALS</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -101,7 +101,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">EXPERIENTIAL</button>
+	<a href="{{ route('menu', ['page' => 'experiential']) }}" class="page-cta ftra-medium text-white">EXPERIENTIAL</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -113,7 +113,7 @@
 			</p>
 		</div>
 	</div>
-	<button class="page-cta ftra-medium text-white">CONNECT</button>
+	<a href="{{ route('menu', ['page' => 'connect']) }}" class="page-cta ftra-medium text-white">CONNECT</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 @endsection
