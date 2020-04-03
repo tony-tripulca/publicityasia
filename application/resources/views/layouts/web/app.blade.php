@@ -64,13 +64,15 @@
         </div>
     </div>
 
-    <div class="video-holder">
-        <video autoplay loop muted playsinline id="banner-video">
-            <source src="{{ asset('videos/banner-video-MOV.mov') }}" type="video/mov">
-            <source src="{{ asset('videos/banner-video-MP4.mp4') }}" type="video/mp4">
-            <!-- <source src="https://archive.org/download/Sample_20170106/Sample.mp4" type="video/mp4"> -->
-        </video>
-    </div>
+    @if($has_video)
+        <div class="video-holder">
+            <video autoplay loop muted playsinline id="banner-video">
+                <source src="{{ asset('videos/banner-video-MOV.mov') }}" type="video/mov">
+                <source src="{{ asset('videos/banner-video-MP4.mp4') }}" type="video/mp4">
+                <!-- <source src="https://archive.org/download/Sample_20170106/Sample.mp4" type="video/mp4"> -->
+            </video>
+        </div>
+    @endif
 
     <header>
         @yield('navbar')

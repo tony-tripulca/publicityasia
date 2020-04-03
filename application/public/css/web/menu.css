@@ -1,0 +1,56 @@
+.main-menu {
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    height: calc(100% - 52px);
+}
+
+.menu.item {
+    height: calc(100% / 6);
+}
+
+.menu.item h1 {
+    padding: 0px 50px;
+}
+
+.menu.content {
+    height: 0px;
+    padding: 0px 50px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.lead-control {
+    display: none;
+}
+
+.menu.content.active {
+    height: calc(100% - 92px);
+}
+
+.lead-control.active {
+    display: block;
+}
+
+#services-content .list-group {
+    margin: 0px;
+    padding: 0px;
+}
+
+#services-content .list-group-item {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+.carousel-control-prev {
+    left: -40px;
+}
+
+.carousel-control-next {
+    right: -40px;
+}
