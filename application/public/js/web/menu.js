@@ -3,7 +3,14 @@ $(() => {
         menu: $('.menu.item'),
         label: $('.menu.item h1'),
         content: $('.menu.content'),
-        offset: 0,
+        offset: [
+            $('#profile').offset().top - 52,
+            $('#services').offset().top - 52,
+            $('#network').offset().top - 52,
+            $('#originals').offset().top - 52,
+            $('#experiential').offset().top - 52,
+            $('#connect').offset().top - 52
+        ],
         index: 0
     };
 
@@ -69,20 +76,17 @@ $(() => {
 
     $(control.menu).on('click', function(event) {
         control.index = control.menu.index(this);
-        control.offset = ($(this).offset().top - 52).toString();
+
+        closeAllMenu(control, control.index);
 
         // Remove if clause when originals content is available
         if(control.index != 3) {
             toggleMenu(
-                control.offset,
+                control.offset[control.index],
                 control.label[control.index],
                 control.content[control.index]
             );
         }
-
-        setTimeout(function() {
-            closeAllMenu(control, control.index);
-        }, 500) 
     });
 });
 
