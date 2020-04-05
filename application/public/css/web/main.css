@@ -37,187 +37,11 @@ body {
     margin-left: 5px;
 }
 
-.video-holder,
-.video-holder video {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin: auto;
-}
-
-.video-holder:before {
-    content: '';
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 1010;
-    height: 100%;
-    width: 100%;
-    background: rgba(43, 43, 43, 0.8);
-}
-
-.page-hero {
-    margin-left: 20px;
-}
-
-.page-hero .specific.platform {
-    margin-left: -15px;
-}
-
-.page-cta {
-    position: absolute;
-    bottom: 70px;
-    left: 0px;
-    right: 0px;
-    width: 180px;
-    height: 40px;
-    margin: 0px auto;
-    padding: 5px;
-    border: 2px solid white;
-    background-color: transparent;
-    text-align: center;
-}
-
-.page-down-button {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-    right: 0px;
-    margin: 0px auto;
-    border: none;
-    background-color: transparent;
-    font-size: 2rem;
-}
-
-.onepage-pagination {
-    top: auto;
-    bottom: 25px;
-    left: auto;
-    right: 20px;
-}
-
-.onepage-pagination li a {
-    line-height: 0;
-    font-size: 2rem;
-}
-
-.onepage-pagination li a::before {
-    z-index: -1;
-    border: none;
-    background-color: transparent;
-    color: white;
-    content: "\02013";
-}
-
-.onepage-pagination li a.active::before {
-    z-index: -1;
-    left: 9px;
-    margin-top: 2px;
-    border: none;
-    color: white;
-    content: "+";
-}
-
-
-#main-menu #profile .card-body,
-#main-menu #services .card-body,
-#main-menu #experiential .card-body,
-#main-menu #connect .card-body  {
-    padding: 40px 0px;
-}
-
-#main-menu #experiential .card-body,
-#main-menu #connect .card-body {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#main-menu {
-    margin-top: 52px;
-}
-
-#main-menu .card {
-    border: none;
-}
-
-.menu-action button {
-    padding: 20px 50px;
-    border: none;
-    text-align: left;
-}
-
-.menu-action button::after {
-    position: absolute;
-    top: 18px;
-    right: 50px;
-    color: white;
-    content: "\02013";
-}
-
-.menu-action button.collapsed::after {
-    position: absolute;
-    top: 18px;
-    right: 48px;
-    color: white;
-    content: "+";
-}
-
-#main-menu #profile .card-body {
-    background-image: url('../../images/profile.jpg');
-    background-size: contain;
-	background-position: left center;
-	background-repeat: no-repeat;
-}
-
-#main-menu #services .card-body {
-    background-image: url('../../images/services.jpg');
-    background-size: contain;
-	background-position: right center;
-	background-repeat: no-repeat;
-}
-
-#main-menu #services .list-group-item {
-    margin: 0px;
-    padding: 0px;
-    border: none;
-    background-color: transparent;
-}
-
-#main-menu #network .carousel-control-prev {
-    left: -80px;
-}
-
-#main-menu #network .carousel-control-next {
-    right: -80px;
-}
-
-#main-menu #connect .card-body {
-    height: 630px;
-    background-image: url('../../images/connect.jpg');
-    background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-#main-menu #connect p a:hover {
-    color: lightcoral;
-}
-
 /** ===========================================================
  * Small devices (landscape phones, 576px and up)
  * ============================================================ */
 
-@media (min-width: 576px) {
-    .page-hero .specific.platform {
-        margin-left: -20px;
-    }
-}
+@media (min-width: 576px) {}
 
 /** ===========================================================
  * Medium devices (tablets, 768px and up)
@@ -242,27 +66,10 @@ body {
     .navbar .nav-link img {
         width: 32px;
     }
-
-    .page-hero {
-        margin-left: 50px;
-    }
-
-    .page-cta {
-        bottom: 40px;
-        left: auto;
-        right: auto;
-        margin-left: 50px;
-    }
-
-    .onepage-pagination {
-        right: 50px;
-    }
 }
 
 /** ===========================================================
  * Extra large devices (large desktops, 1200px and up)
  * ============================================================ */
 
-@media (min-width: 1200px) {
-
-}
+@media (min-width: 1200px) {}
