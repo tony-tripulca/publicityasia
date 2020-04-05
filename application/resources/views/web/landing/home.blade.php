@@ -8,7 +8,7 @@
 @endsection
 
 @section('module-styles')
-
+<link rel="stylesheet" type="text/css" href="{{ asset('css/web/home.css') }}">
 @endsection
 
 @section('plugin-scripts')
@@ -19,7 +19,7 @@
 @endsection
 
 @section('module-scripts')
-
+<script type="text/javascript" src="{{ asset('js/web/home.js') }}"></script>
 @endsection
 
 @section('content')
@@ -88,7 +88,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'originals']) }}" class="page-cta ftra-medium text-white">ORIGINALS</a>
+	<a href="#" class="page-cta ftra-medium text-white">ORIGINALS</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
