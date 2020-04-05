@@ -36,7 +36,7 @@
         </div>
     </div>
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">SERVICES</h1>
+        <h1 class="ftra-medium text-red text-30">SERVICES</h1>
     </div>
     <div id="services-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
@@ -89,7 +89,7 @@
         </div>
     </div>
     <div id="originals" class="menu item bg-gray-4 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">ORIGINALS</h1>
+        <h1 class="ftra-medium text-red text-30">ORIGINALS</h1>
     </div>
     <div id="originals-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
         
@@ -114,7 +114,7 @@
         </div>
     </div>
     <div id="connect" class="menu item bg-gray-6 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">CONNECT</h1>
+        <h1 class="ftra-medium text-red text-30">CONNECT</h1>
     </div>
     <div id="connect-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-end">
