@@ -1,4 +1,12 @@
 $(() => {
+    var control = {
+        menu: $('.menu.item'),
+        label: $('.menu.item h1'),
+        content: $('.menu.content'),
+        offset: 0,
+        index: 0
+    };
+
     var _articles = $('#network-content .carousel-inner');
     var url = "";
 
@@ -59,28 +67,22 @@ $(() => {
         `);
     }
 
-    var _target, _lead_control;
-
-    $('.menu.item').on('click', function(event) {
-        _target = $(this).data('target');
-        _lead_control = $(this).data('target') + " .lead-control";
+    $(control.menu).on('click', function(event) {
+        control.index = control.menu.index(this);
+        control.offset = ($(this).offset().top - 52).toString();
 
         // Remove if clause when originals content is available
-        if(_target != "#originals-content") {
-            if($(_target).hasClass('active')) {
-                setTimeout(function() {
-                    $(_target).toggleClass('active');
-                }, 100);
-
-                $(_lead_control).toggleClass('active');
-            } else {
-                $(_target).toggleClass('active');
-
-                setTimeout(function() {
-                    $(_lead_control).toggleClass('active');
-                }, 100);
-            }
+        if(control.index != 3) {
+            toggleMenu(
+                control.offset,
+                control.label[control.index],
+                control.content[control.index]
+            );
         }
+
+        setTimeout(function() {
+            closeAllMenu(control, control.index);
+        }, 500) 
     });
 });
 
@@ -91,43 +93,43 @@ $(window).on('load', function() {
         case "profile":
             openMenu(
                 $('#profile').offset().top - 52,
-                $('#profile-content'),
-                $('#profile-content .lead-control')
+                $('#profile h1'),
+                $('#profile-content')
             );
             break;
         case "services":
             openMenu(
                 $('#services').offset().top - 52,
-                $('#services-content'),
-                $('#services-content .lead-control')
+                $('#services h1'),
+                $('#services-content')
             );
             break;
         case "network":
             openMenu(
                 $('#network').offset().top - 52,
-                $('#network-content'),
-                $('#network-content .lead-control')
+                $('#network h1'),
+                $('#network-content')
             );
             break;
         case "originals":
             openMenu(
                 $('#originals').offset().top - 52,
-                $('#originals-content'),
-                $('#originals-content .lead-control')
+                $('#originals h1'),
+                $('#originals-content')
             );
             break;
         case "experiential":
             openMenu(
                 $('#experiential').offset().top - 52,
-                $('#experiential-content'),
-                $('#experiential-content .lead-control')
+                $('#experiential h1'),
+                $('#experiential-content')
             );
             break;
         case "connect":
             openMenu(
                 $('#connect').offset().top - 52,
-                $('#connect-content'),
-                $('#connect-content .lead-control')
+                $('#connect h1'),
+                $('#connect-content')
             );
             break;
         default:
@@ -136,10 +138,28 @@ $(window).on('load', function() {
     }
 });
 
-function openMenu(offset, target, lead) {
+function toggleMenu(offset, label, content) {
+    $('html, boby').animate({ scrollTop: offset });
+    $(label).toggleClass('active');
+    $(content).toggleClass('active');
+    $(content).find('.lead-control').toggleClass('active');
+}
+
+function openMenu(offset, label, content) {
     setTimeout(function() {
         $('html, boby').animate({ scrollTop: offset });
-        $(target).addClass('active');
-        $(lead).addClass('active');
+        $(label).addClass('active');
+        $(content).addClass('active');
+        $(content).find('.lead-control').addClass('active');
     }, 1000);
+}
+
+function closeAllMenu(control, index) {
+    for(let i = 0; i < control.label.length; i++) {
+        if(i != index) {
+            $(control.label[i]).removeClass('active');
+            $(control.content[i]).removeClass('active');
+            $(control.content[i]).find('.lead-control').removeClass('active');
+        }
+    }
 }

@@ -13,6 +13,17 @@
     padding: 0px 50px;
 }
 
+.menu.item h1::after {
+    position: absolute;
+    right: 50px;
+    content: "\02013";
+}
+
+.menu.item h1.active::after {
+    content: "+";
+    right: 48px;
+}
+
 .menu.content {
     height: 0px;
     padding: 0px 50px;
@@ -35,6 +46,20 @@
     display: block;
 }
 
+#profile-content {
+    background-image: url('../../images/profile.jpg');
+    background-size: cover;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#services-content {
+    background-image: url('../../images/services.jpg');
+    background-size: cover;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
 #services-content .list-group {
     margin: 0px;
     padding: 0px;
@@ -42,7 +67,7 @@
 
 #services-content .list-group-item {
     margin: 0px;
-    padding: 0px;
+    padding: 5px 0px;
     border: none;
     background-color: transparent;
 }
@@ -53,4 +78,15 @@
 
 .carousel-control-next {
     right: -40px;
+}
+
+#connect-content {
+    background-image: url('../../images/connect.jpg');
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#connect-content .lead-control {
+    padding-bottom: 20px;
 }
