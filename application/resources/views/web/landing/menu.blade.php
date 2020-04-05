@@ -97,7 +97,7 @@
     <div id="experiential" class="menu item bg-gray-5 d-flex align-items-center">
         <h1 class="ftra-medium text-white text-30">EXPERIENTIAL</h1>
     </div>
-    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-13 line-15 space-10 text-justify text-white">
+    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-15 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 mb-5 lead-control">
                 <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
@@ -116,7 +116,7 @@
     <div id="connect" class="menu item bg-gray-6 d-flex align-items-center">
         <h1 class="ftra-medium text-red text-30">CONNECT</h1>
     </div>
-    <div id="connect-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
+    <div id="connect-content" class="menu content bg-nero ftra-heavy text-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-end">
             <div class="col-12 lead-control">
                 <p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>

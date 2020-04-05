@@ -1,5 +1,5 @@
 $(() => {
-    var domain = "http://localhost/publicityasia";
+    var domain = "http://dev.publicityasia.com";
 
     $('.tlt').textillate({
         loop: false,
