@@ -87,6 +87,10 @@
     font-size: 1.5rem;
 }
 
+.text-16 {
+    font-size: 1.6rem;
+}
+
 .text-20 {
     font-size: 2.0rem;
 }
@@ -120,8 +124,20 @@
     line-height: 0.5;
 }
 
+.line-07 {
+    line-height: 0.7;
+}
+
 .line-10 {
     line-height: 1.0;
+}
+
+.line-11 {
+    line-height: 1.1;
+}
+
+.line-12 {
+    line-height: 1.2;
 }
 
 .line-15 {
@@ -545,6 +561,18 @@
 
     .text-xl-10 {
         font-size: 1.0rem;
+    }
+
+    .text-xl-15 {
+        font-size: 1.5rem;
+    }
+
+    .text-xl-17 {
+        font-size: 1.7rem;
+    }
+
+    .text-xl-18 {
+        font-size: 1.8rem;
     }
 
     .text-xl-20 {

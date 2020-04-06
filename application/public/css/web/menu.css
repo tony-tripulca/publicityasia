@@ -51,15 +51,15 @@
 #profile-content {
     background-image: url('../../images/profile.jpg');
     background-size: cover;
-	background-position: left center;
-	background-repeat: no-repeat;
+    background-position: left center;
+    background-repeat: no-repeat;
 }
 
 #services-content {
     background-image: url('../../images/services.jpg');
     background-size: cover;
-	background-position: right center;
-	background-repeat: no-repeat;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 #services-content .list-group {
@@ -69,7 +69,7 @@
 
 #services-content .list-group-item {
     margin: 0px;
-    padding: 5px 0px;
+    padding: 0px 0px;
     border: none;
     background-color: transparent;
 }
@@ -85,10 +85,34 @@
 #connect-content {
     background-image: url('../../images/connect.jpg');
     background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #connect-content .lead-control {
     padding-bottom: 20px;
 }
+
+/** ===========================================================
+ * Small devices (landscape phones, 576px and up)
+ * ============================================================ */
+
+@media (min-width: 576px) {}
+
+/** ===========================================================
+ * Medium devices (tablets, 768px and up)
+ * ============================================================ */
+
+@media (min-width: 768px) {}
+
+/** ===========================================================
+ * Large devices (desktops, 992px and up)
+ * ============================================================ */
+
+@media (min-width: 992px) {}
+
+/** ===========================================================
+ * Extra large devices (large desktops, 1200px and up)
+ * ============================================================ */
+
+@media (min-width: 1200px) {}

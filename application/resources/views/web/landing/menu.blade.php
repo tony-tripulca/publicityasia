@@ -38,9 +38,9 @@
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
         <h1 class="ftra-medium text-red text-30">SERVICES</h1>
     </div>
-    <div id="services-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
+    <div id="services-content" class="menu content bg-nero ftra-heavy text-16 text-xl-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
-            <div class="col-12 col-lg-4 lead-control">
+            <div class="col-12 col-lg-5 lead-control">
                 <ul class="list-group">
                     <li class="list-group-item">Media Relations</li>
                     <li class="list-group-item">Celebrity Acquisition</li>
@@ -53,7 +53,7 @@
                     <li class="list-group-item">Event & Activation</li>
                 </ul>
             </div>
-            <div class="col-12 col-lg-4 lead-control">
+            <div class="col-12 col-lg-5 lead-control">
                 <ul class="list-group">
                     <li class="list-group-item">International PR</li>
                     <li class="list-group-item">Influencer Selection</li>
