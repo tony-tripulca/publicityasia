@@ -72,7 +72,7 @@
         <h1 class="ftra-medium text-white text-30">NETWORK</h1>
     </div>
     <div id="network-content" class="menu content bg-gray-3 ftra-heavy text-13 line-15 space-10 text-justify text-white">
-        <div class="row no-gutters h-100 d-flex align-items-center">
+        <div class="row no-gutters h-100 d-flex align-items-start">
             <div class="col-12 offset-lg-4 col-lg-4 lead-control text-center">
                 <div id="article-carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner"></div>
