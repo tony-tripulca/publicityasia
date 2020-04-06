@@ -16,13 +16,13 @@
 .menu.item h1::after {
     position: absolute;
     right: 50px;
-    content: "\02013";
+    content: "+";
     color: white;
 }
 
 .menu.item h1.active::after {
     right: 48px;
-    content: "+";
+    content: "\02013";
     color: white;
 }
 

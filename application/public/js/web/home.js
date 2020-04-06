@@ -1,6 +1,4 @@
 $(() => {
-    var domain = "http://dev.publicityasia.com";
-
     $('.tlt').textillate({
         loop: false,
         minDisplayTime: 1000,
@@ -70,10 +68,6 @@ $(() => {
     //     "repeat": "list",
     //     "controls": false
     // });
-
-    $('.page-cta').on('click', function() {
-        window.location.href = domain + "/menu?page=" + $(this).text().toLowerCase();
-    });
 
     $('.page-down-button').on('click', function() {
         $('.main').moveDown();
