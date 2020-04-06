@@ -143,7 +143,7 @@ $(window).on('load', function() {
 });
 
 function toggleMenu(offset, label, content) {
-    $('html, boby').animate({ scrollTop: offset });
+    $('html, body').animate({ scrollTop: offset });
     $(label).toggleClass('active');
     $(content).toggleClass('active');
     $(content).find('.lead-control').toggleClass('active');
@@ -151,7 +151,7 @@ function toggleMenu(offset, label, content) {
 
 function openMenu(offset, label, content) {
     setTimeout(function() {
-        $('html, boby').animate({ scrollTop: offset });
+        $('html, body').animate({ scrollTop: offset });
         $(label).addClass('active');
         $(content).addClass('active');
         $(content).find('.lead-control').addClass('active');
