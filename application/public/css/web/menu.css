@@ -74,10 +74,6 @@
     background-color: transparent;
 }
 
-#network-content #article-carousel {
-    margin-top: 5%;
-}
-
 .carousel-control-prev {
     left: -40px;
 }
@@ -120,3 +116,13 @@
  * ============================================================ */
 
 @media (min-width: 1200px) {}
+
+/** ===========================================================
+ * Devices with larger view height
+ * ============================================================ */
+
+@media (min-height: 720px) {
+    #network-content #article-carousel {
+        margin-top: 60px;
+    }
+}
