@@ -82,6 +82,10 @@
     right: -40px;
 }
 
+#experiential-content .lead-control {
+    /* border: 1px solid red; */
+}
+
 #connect-content {
     background-image: url('../../images/connect.jpg');
     background-size: cover;

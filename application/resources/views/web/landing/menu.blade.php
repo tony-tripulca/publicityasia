@@ -97,19 +97,19 @@
     <div id="experiential" class="menu item bg-gray-5 d-flex align-items-center">
         <h1 class="ftra-medium text-white text-30">EXPERIENTIAL</h1>
     </div>
-    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-15 line-15 space-10 text-justify text-white">
+    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
-            <div class="col-12 mb-5 lead-control">
+            <div class="col-12 lead-control">
                 <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
             </div>
-            <div class="col-12 col-lg-4 lead-control text-left">
-                <img src="{{ asset('images/leadingseries.png') }}" width="100%" class="img-fluid">
+            <div class="col-12 col-lg-5 lead-control text-left">
+                <img src="{{ asset('images/leadingseries.png') }}" width="78%" class="img-fluid mb-3">
             </div>
-            <div class="col-12 offset-lg-1 col-lg-4 lead-control text-center">
-                <img src="{{ asset('images/womanforward.png') }}" width="100%" class="img-fluid">
+            <div class="col-12 col-lg-5 lead-control text-left">
+                <img src="{{ asset('images/womanforward.png') }}" width="85%" class="img-fluid mb-3">
             </div>
-            <div class="col-12 col-lg-3 lead-control text-right">
-                <img src="{{ asset('images/idolfest.png') }}" width="60%" class="img-fluid">
+            <div class="col-12 col-lg-2 lead-control text-right">
+                <img src="{{ asset('images/idolfest.png') }}" width="95%" class="img-fluid mb-3">
             </div>
         </div>
     </div>
