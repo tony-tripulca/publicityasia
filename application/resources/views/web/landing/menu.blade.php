@@ -124,6 +124,11 @@
             letter-spacing: 1.5px;
             text-align: justify;
         }
+        #services-content {
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            text-align: justify;
+        }
         .carousel-control-prev {
             left: -40px;
         }
@@ -134,6 +139,9 @@
     @media (min-width: 1200px) {
         #profile-content {
             font-size: 1.8rem;
+        }
+        #services-content {
+            font-size: 2.2rem;
         }
     }
     @media (min-height: 720px) {
@@ -189,7 +197,7 @@
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
     </div>
-    <div id="services-content" class="menu content bg-nero ftra-heavy text-lg-justify text-white">
+    <div id="services-content" class="menu content bg-nero ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 d-lg-none lead-control">
                 <ul class="list-group">
@@ -270,7 +278,7 @@
     <div id="experiential" class="menu item bg-gray-5 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-white">EXPERIENTIAL</h1>
     </div>
-    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-lg-justify text-white">
+    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 lead-control">
                 <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
