@@ -149,6 +149,12 @@
         #experiential-content {
             font-size: 1.2rem;
         }
+        #connect-content {
+            font-size: 1.2rem;
+        }
+        #connect-content .lead-control {
+            padding-bottom: 100px;
+        }
     }
 </style>
 @endsection
@@ -278,7 +284,7 @@
     <div id="connect" class="menu item bg-gray-6 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-red">CONNECT</h1>
     </div>
-    <div id="connect-content" class="menu content bg-nero ftra-heavy text-20 line-15 space-10 text-justify text-white">
+    <div id="connect-content" class="menu content bg-nero ftra-heavy text-lg-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-end">
             <div class="col-12 lead-control">
                 <p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
