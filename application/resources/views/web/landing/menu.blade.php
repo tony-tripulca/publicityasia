@@ -13,7 +13,119 @@
 
 @section('module-styles')
 <style>
-    .main-menu{position:absolute;top:52px;width:100%;height:calc(100% - 52px)}.menu.item{height:calc(100% / 6)}.menu.item h1{padding:0 50px}.menu.item h1::after{position:absolute;right:50px;content:"+";color:#fff}.menu.item h1.active::after{right:48px;content:"\02013";color:#fff}.menu.content{height:0;padding:0 50px;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.lead-control{display:none}.menu.content.active{height:calc(100% - 92px)}.lead-control.active{display:block}#profile-content{background-image:url(../../images/profile.jpg);background-size:cover;background-position:left center;background-repeat:no-repeat}#services-content{background-image:url(../../images/services.jpg);background-size:cover;background-position:right center;background-repeat:no-repeat}#services-content .list-group{margin:0;padding:0}#services-content .list-group-item{margin:0;padding:0 0;border:none;background-color:transparent}.carousel-control-prev{left:-40px}.carousel-control-next{right:-40px}#connect-content{background-image:url(../../images/connect.jpg);background-size:cover;background-position:center center;background-repeat:no-repeat}#connect-content .lead-control{padding-bottom:20px}@media (min-height:720px){#network-content #article-carousel{margin-top:60px}}
+    .main-menu {
+        position: absolute;
+        top: 44px;
+        width: 100%;
+        height: calc(100% - 44px);
+    }
+    .menu.item {
+        width: 100%;
+        height: calc(100% / 6);
+    }
+    .menu.item h1 {
+        padding: 0 20px;
+    }
+    .menu.item h1::after {
+        position: absolute;
+        right: 20px;
+        content: "+";
+        color: #fff;
+    }
+    .menu.item h1.active::after {
+        right: 22px;
+        content: "\02013";
+        color: #fff;
+    }
+    .menu.content {
+        height: 0;
+        padding: 0 20px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    .lead-control {
+        display: none;
+    }
+    .menu.content.active {
+        height: calc(100% - 92px);
+    }
+    .lead-control.active {
+        display: block;
+    }
+    #profile-content {
+        background-image: url(../../images/profile.jpg);
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        font-size: 0.9rem;
+    }
+    #services-content {
+        background-image: url(../../images/services.jpg);
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    #services-content .list-group {
+        margin: 0;
+        padding: 0;
+    }
+    #services-content .list-group-item {
+        margin: 0;
+        padding: 0 0;
+        border: none;
+        background-color: transparent;
+    }
+    .carousel-control-prev {
+        left: -40px;
+    }
+    .carousel-control-next {
+        right: -40px;
+    }
+    #connect-content {
+        background-image: url(../../images/connect.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #connect-content .lead-control {
+        padding-bottom: 20px;
+    }
+    @media (min-width: 992px) {
+        .main-menu {
+            top: 52px;
+            height: calc(100% - 52px);
+        }
+        .menu.item h1 {
+            padding: 0 50px;
+        }
+        .menu.item h1::after {
+            right: 50px;
+        }
+        .menu.item h1.active::after {
+            right: 48px;
+        }
+        .menu.content {
+            padding: 0 50px;
+        }
+    }
+    @media (min-height: 720px) {
+        #network-content #article-carousel {
+            margin-top: 60px;
+        }
+    }
+    @media (pointer:none), (pointer:coarse) and (min-height: 572px) {
+        #profile-content {
+            font-size: 1rem;
+        }
+    }
+    @media (pointer:none), (pointer:coarse) and (min-height: 720px) {
+        #profile-content {
+            font-size: 1.2rem;
+        }
+    
 </style>
 @endsection
 
@@ -31,9 +143,9 @@
 <section class="main-menu">
     <!-- divs are set to be siblings to achieve full height page accordion -->
     <div id="profile" class="menu item bg-gray-1 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">PROFILE</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-white">PROFILE</h1>
     </div>
-    <div id="profile-content" class="menu content bg-gray-3 ftra-heavy text-13 line-15 space-10 text-justify text-white">
+    <div id="profile-content" class="menu content bg-gray-3 ftra-heavy text-lg-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 offset-lg-4 col-lg-8 lead-control">
                 <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p><br>
@@ -45,7 +157,7 @@
         </div>
     </div>
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
-        <h1 class="ftra-medium text-red text-30">SERVICES</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
     </div>
     <div id="services-content" class="menu content bg-nero ftra-heavy text-16 text-xl-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
@@ -78,7 +190,7 @@
         </div>
     </div>
     <div id="network" class="menu item bg-gray-3 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">NETWORK</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-white">NETWORK</h1>
     </div>
     <div id="network-content" class="menu content bg-gray-3 ftra-heavy text-13 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-start">
@@ -98,13 +210,13 @@
         </div>
     </div>
     <div id="originals" class="menu item bg-gray-4 d-flex align-items-center">
-        <h1 class="ftra-medium text-red text-30">ORIGINALS</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-red">ORIGINALS</h1>
     </div>
     <div id="originals-content" class="menu content bg-nero ftra-heavy text-13 line-15 space-10 text-justify text-white">
         
     </div>
     <div id="experiential" class="menu item bg-gray-5 d-flex align-items-center">
-        <h1 class="ftra-medium text-white text-30">EXPERIENTIAL</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-white">EXPERIENTIAL</h1>
     </div>
     <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
@@ -123,7 +235,7 @@
         </div>
     </div>
     <div id="connect" class="menu item bg-gray-6 d-flex align-items-center">
-        <h1 class="ftra-medium text-red text-30">CONNECT</h1>
+        <h1 class="ftra-medium text-25 text-lg-30 text-red">CONNECT</h1>
     </div>
     <div id="connect-content" class="menu content bg-nero ftra-heavy text-20 line-15 space-10 text-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-end">
