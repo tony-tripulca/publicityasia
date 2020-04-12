@@ -178,6 +178,12 @@
         width: 100%;
         bottom: 0px;
     }
+    #connect-content {
+            padding-bottom: 100px;
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+            text-align: justify;
+        }
     }
     @media (min-width: 1200px) {
         #profile-content {
@@ -195,6 +201,10 @@
         #experiential-content .row div:nth-of-type(1) {
         margin-bottom: -100px;
     }
+    #connect-content {
+            padding-bottom: 100px;
+            font-size: 1.8rem;
+        }
     }
     @media (min-height: 720px) {
         #network-content #article-carousel {
