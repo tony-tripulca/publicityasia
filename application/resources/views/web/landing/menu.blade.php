@@ -119,11 +119,21 @@
         .menu.content {
             padding: 0 50px;
         }
+        #profile-content {
+            font-size: 1.3rem;
+            letter-spacing: 1.5px;
+            text-align: justify;
+        }
         .carousel-control-prev {
             left: -40px;
         }
         .carousel-control-next {
             right: -40px;
+        }
+    }
+    @media (min-width: 1200px) {
+        #profile-content {
+            font-size: 1.8rem;
         }
     }
     @media (min-height: 720px) {
@@ -165,7 +175,7 @@
     <div id="profile" class="menu item bg-gray-1 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-white">PROFILE</h1>
     </div>
-    <div id="profile-content" class="menu content bg-gray-3 ftra-heavy text-lg-justify text-white">
+    <div id="profile-content" class="menu content bg-gray-3 ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 offset-lg-4 col-lg-8 lead-control">
                 <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p><br>
