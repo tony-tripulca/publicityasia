@@ -38,9 +38,8 @@
 
     @yield('plugin-styles')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/utilities.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/web/preloader.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/web/main.css') }}">
+    @yield('utilities')
+    @yield('main-styles')
 
     @yield('module-styles')
 
@@ -81,14 +80,13 @@
         @yield('content')
     </main>
 
-    <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('plugins/jquery-3.4.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/popper/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
     @yield('plugin-scripts')
 
-    <script type="text/javascript" src="{{ asset('js/web/preloader.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/web/main.js') }}"></script>
+    @yield('main-scripts')
 
     @yield('module-scripts')
 </body>
