@@ -68,7 +68,6 @@
         background-position: right center;
         background-repeat: no-repeat;
     }
-
     #services-content .list-group {
         margin: 0;
         padding: 0;
@@ -84,6 +83,15 @@
     }
     .carousel-control-next {
         right: -20px;
+    }
+    #experiential-content img:nth-of-type(1) {
+        margin: 0px 0px 30px 0px;
+    }
+    #experiential-content img:nth-of-type(2) {
+        margin: 0px 0px 30px 0px;
+    }
+    #experiential-content img:nth-of-type(3) {
+        margin: 0px 0px 60px 0px;
     }
     #connect-content {
         background-image: url(../../images/connect.jpg);
@@ -137,6 +145,9 @@
         }
         #network-content #article-carousel {
             margin-top: 35%;
+        }
+        #experiential-content {
+            font-size: 1.2rem;
         }
     }
 </style>
@@ -243,18 +254,23 @@
     <div id="experiential" class="menu item bg-gray-5 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-white">EXPERIENTIAL</h1>
     </div>
-    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-20 line-15 space-10 text-justify text-white">
+    <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-lg-justify text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
             <div class="col-12 lead-control">
                 <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
             </div>
-            <div class="col-12 col-lg-5 lead-control text-left">
+            <div class="offset-1 col-10 d-lg-none lead-control text-center">
+                <img src="{{ asset('images/leadingseries.png') }}" class="img-fluid">
+                <img src="{{ asset('images/womanforward.png') }}" class="img-fluid">
+                <img src="{{ asset('images/idolfest.png') }}" width="50%" class="img-fluid">
+            </div>
+            <div class="col-lg-5 d-none d-lg-block lead-control text-left">
                 <img src="{{ asset('images/leadingseries.png') }}" width="78%" class="img-fluid mb-3">
             </div>
-            <div class="col-12 col-lg-5 lead-control text-left">
+            <div class="col-lg-5 d-none d-lg-block lead-control text-left">
                 <img src="{{ asset('images/womanforward.png') }}" width="85%" class="img-fluid mb-3">
             </div>
-            <div class="col-12 col-lg-2 lead-control text-right">
+            <div class="col-lg-2 d-none d-lg-block lead-control text-right">
                 <img src="{{ asset('images/idolfest.png') }}" width="95%" class="img-fluid mb-3">
             </div>
         </div>
