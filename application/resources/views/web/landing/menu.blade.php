@@ -114,7 +114,7 @@
         background-repeat: no-repeat;
     }
     #connect-content .lead-control {
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
     @media (min-width: 992px) {
         .main-menu {
@@ -164,7 +164,6 @@
     }
     #experiential-content .row div:nth-of-type(1) {
         margin-top: 50px;
-        margin-bottom: -100px;
     }
     #experiential-content .row div:nth-of-type(2) {
         width: 100%;
@@ -179,32 +178,30 @@
         bottom: 0px;
     }
     #connect-content {
-            padding-bottom: 100px;
+            
             font-size: 1.6rem;
             letter-spacing: 1.5px;
             text-align: justify;
         }
+        #connect-content .lead-control {
+        padding-bottom: 20px;
+    }
     }
     @media (min-width: 1200px) {
         #profile-content {
-            font-size: 1.8rem;
-        }
-        #services-content {
-            font-size: 2.2rem;
+            font-size: 1.3rem;
         }
         #services-content ul:nth-of-type(2) {
             margin-left: 120px;
         }
         #experiential-content {
-            font-size: 2.5rem;
-        }
-        #experiential-content .row div:nth-of-type(1) {
-        margin-bottom: -100px;
-    }
-    #connect-content {
-            padding-bottom: 100px;
             font-size: 1.8rem;
         }
+    #connect-content {
+
+            font-size: 1.7rem;
+        }
+
     }
     @media (min-height: 720px) {
         #network-content #article-carousel {
@@ -246,9 +243,6 @@
         }
         #connect-content {
             font-size: 1.2rem;
-        }
-        #connect-content .lead-control {
-            padding-bottom: 100px;
         }
     }
     @media (pointer:none), (pointer:coarse) and (min-height: 799px) {
