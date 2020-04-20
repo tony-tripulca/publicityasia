@@ -75,6 +75,9 @@
 	border: none;
 	background-color: transparent;
 }
+#network-content #article-carousel {
+    margin-top: 60px;
+}
 .carousel-control-prev {
 	left: -20px;
 }
@@ -222,6 +225,9 @@
     }
     #services-content {
         font-size: 1.3rem;
+    }
+    #network-content #article-carousel {
+        margin-top: 100px;
     }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) {
