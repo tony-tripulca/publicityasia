@@ -251,6 +251,9 @@
         width: 140px;
         bottom: -330px;
     }
+    #connect-content {
+        font-size: 1rem;
+    }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 374px) and (min-height: 810px) {
 	#profile-content {
@@ -278,6 +281,12 @@
         width: 140px;
         bottom: -430px;
     }
+    #connect-content {
+        font-size: 1.2rem;
+    }
+    #connect-content .lead-control {
+		padding-bottom: 40px;
+	}
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) {
 	#profile-content,
@@ -298,6 +307,9 @@
     #experiential-content .row div:nth-of-type(4) {
         width: 140px;
         bottom: -370px;
+    }
+    #connect-content {
+        font-size: 1.1rem;
     }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) and (min-height: 810px) {
