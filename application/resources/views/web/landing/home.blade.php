@@ -14,21 +14,110 @@
 
 @section('module-styles')
 <style>
-	.video-holder,.video-holder video{position:fixed;top:0;bottom:0;left:0;right:0;z-index:0;width:100%;height:100%;object-fit:cover;margin:auto}.video-holder:before{content:'';position:fixed;top:0;left:0;z-index:1010;height:100%;width:100%;background:rgba(43,43,43,.8)}.page-hero{margin-left:20px}.page-hero .specific.platform{margin-left:-15px}.page-cta{position:absolute;bottom:70px;left:0;right:0;width:180px;height:40px;margin:0 auto;padding:5px;border:2px solid #fff;background-color:transparent;text-align:center}.page-cta:hover{text-decoration:none}.page-down-button{position:absolute;bottom:20px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);border:none;background-color:transparent;font-size:2rem}.onepage-pagination{top:auto;bottom:25px;left:auto;right:20px}.onepage-pagination li a{line-height:0;font-size:2rem}.onepage-pagination li a::before{z-index:-1;border:none;background-color:transparent;color:#fff;content:"\02013"}.onepage-pagination li a.active::before{z-index:-1;left:9px;margin-top:2px;border:none;color:#fff;content:"+"}@media (min-width:576px){.page-hero .specific.platform{margin-left:-20px}}@media (min-width:992px){.page-hero{margin-left:50px}.page-cta{bottom:40px;left:auto;right:auto;margin-left:50px}.onepage-pagination{right:50px}}
+.video-holder,
+.video-holder video {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin: auto;
+}
+.video-holder:before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1010;
+	height: 100%;
+	width: 100%;
+	background: rgba(43, 43, 43, 0.8);
+}
+.page-hero {
+	margin-left: 20px;
+}
+.page-hero .specific.platform {
+	margin-left: -15px;
+}
+.page-cta {
+	position: absolute;
+	bottom: 70px;
+	left: 0;
+	right: 0;
+	width: 120px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 10px 0px;
+	border: 2px solid #fff;
+	background-color: transparent;
+	text-align: center;
+}
+.page-cta:hover {
+	text-decoration: none;
+}
+.page-down-button {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border: none;
+	background-color: transparent;
+	font-size: 2rem;
+}
+.onepage-pagination {
+	top: auto;
+	bottom: 25px;
+	left: auto;
+	right: 20px;
+}
+.onepage-pagination li a {
+	line-height: 0;
+	font-size: 1.5rem;
+}
+.onepage-pagination li a::before {
+	z-index: -1;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	content: '\02013';
+}
+.onepage-pagination li a.active::before {
+	z-index: -1;
+	left: 9.5px;
+	margin-top: 2px;
+	border: none;
+	color: #fff;
+	content: '+';
+}
+@media (min-width: 576px) {
+	.page-hero .specific.platform {
+		margin-left: -20px;
+	}
+}
+@media (min-width: 992px) {
+	.page-hero {
+		margin-left: 50px;
+	}
+	.page-cta {
+		bottom: 40px;
+		left: auto;
+		right: auto;
+		margin-left: 50px;
+	}
+	.onepage-pagination {
+		right: 50px;
+	}
+	.onepage-pagination li a {
+		font-size: 2rem;
+	}
+}
+
 </style>
-@endsection
-
-@section('plugin-scripts')
-<script type="text/javascript" src="{{ asset('plugins/onepage-scroll/jquery.onepage-scroll.js') }}"></script>
-<script type="text/javascript" src="{{ asset('plugins/lettering-js/jquery.lettering.js') }}"></script>
-<script type="text/javascript" src="{{ asset('plugins/textillate/jquery.textillate.js') }}"></script>
-<!-- <script src="https://archive.org/jw/8/jwplayer.js"></script> -->
-@endsection
-
-@section('module-scripts')
-<script type="text/javascript">
-	$(()=>{$(".tlt").textillate({loop:!1,minDisplayTime:1e3,initialDelay:1e3,autoStart:!0,in:{effect:"fadeInUp",delayScale:1.5,delay:50,sync:!0,shuffle:!1,reverse:!1,callback:function(){}},out:{effect:"fadeOut",delayScale:.5,delay:50,sync:!0,shuffle:!1,reverse:!1,callback:function(){}},callback:function(){},type:"char"}),$(".main").onepage_scroll({sectionContainer:"section",easing:"ease",animationTime:1e3,pagination:!0,updateURL:!1,beforeMove:function(index){$(".page-cta").fadeTo(50,0),$(".page-hero").fadeTo(50,0),$(".page-down-button").fadeTo(50,0),setTimeout((function(){$(".page-cta").stop(!0,!1).fadeTo(500,1),$(".page-hero").stop(!0,!1).fadeTo(500,1),$(".page-down-button").stop(!0,!1).fadeTo(500,1)}),500)},afterMove:function(index){},loop:!1,keyboard:!0,responsiveFallback:!1,direction:"vertical"}),$(".page-down-button").on("click",(function(){$(".main").moveDown()}))});
-</script>
 @endsection
 
 @section('content')
@@ -44,7 +133,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu') }}" class="page-cta ftra-medium text-white">MENU</a>
+	<a href="{{ route('menu') }}" class="page-cta ftra-medium text-white">ABOUT</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -125,4 +214,17 @@
 	<a href="{{ route('menu', ['page' => 'connect']) }}" class="page-cta ftra-medium text-white">CONNECT</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
+@endsection
+
+@section('plugin-scripts')
+<script type="text/javascript" src="{{ asset('plugins/onepage-scroll/jquery.onepage-scroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/lettering-js/jquery.lettering.js') }}"></script>
+<script type="text/javascript" src="{{ asset('plugins/textillate/jquery.textillate.js') }}"></script>
+<!-- <script src="https://archive.org/jw/8/jwplayer.js"></script> -->
+@endsection
+
+@section('module-scripts')
+<script type="text/javascript">
+	$(()=>{$(".tlt").textillate({loop:!1,minDisplayTime:1e3,initialDelay:1e3,autoStart:!0,in:{effect:"fadeInUp",delayScale:1.5,delay:50,sync:!0,shuffle:!1,reverse:!1,callback:function(){}},out:{effect:"fadeOut",delayScale:.5,delay:50,sync:!0,shuffle:!1,reverse:!1,callback:function(){}},callback:function(){},type:"char"}),$(".main").onepage_scroll({sectionContainer:"section",easing:"ease",animationTime:1e3,pagination:!0,updateURL:!1,beforeMove:function(index){$(".page-cta").fadeTo(50,0),$(".page-hero").fadeTo(50,0),$(".page-down-button").fadeTo(50,0),setTimeout((function(){$(".page-cta").stop(!0,!1).fadeTo(500,1),$(".page-hero").stop(!0,!1).fadeTo(500,1),$(".page-down-button").stop(!0,!1).fadeTo(500,1)}),500)},afterMove:function(index){},loop:!1,keyboard:!0,responsiveFallback:!1,direction:"vertical"}),$(".page-down-button").on("click",(function(){$(".main").moveDown()}))});
+</script>
 @endsection
