@@ -84,6 +84,9 @@
 .carousel-control-next {
 	right: -20px;
 }
+#experiential-content {
+    font-size: 0.9rem;
+}
 #experiential-content .row div:nth-of-type(2),
 #experiential-content .row div:nth-of-type(3),
 #experiential-content .row div:nth-of-type(4) {
@@ -96,16 +99,16 @@
 	margin-top: 10px;
 }
 #experiential-content .row div:nth-of-type(2) {
-	width: 280px;
-	bottom: -220px;
+	width: 240px;
+	bottom: -200px;
 }
 #experiential-content .row div:nth-of-type(3) {
-	width: 300px;
-	bottom: -270px;
+	width: 260px;
+	bottom: -240px;
 }
 #experiential-content .row div:nth-of-type(4) {
-	width: 180px;
-	bottom: -320px;
+	width: 140px;
+	bottom: -280px;
 }
 #connect-content {
 	background-image: url("{{ asset('images/connect.jpg') }}");
@@ -114,7 +117,7 @@
 	background-repeat: no-repeat;
 }
 #connect-content .lead-control {
-	padding-bottom: 60px;
+	padding-bottom: 20px;
 }
 @media (min-width: 992px) {
 	.main-menu {
@@ -210,6 +213,21 @@
     #services-content {
         font-size: 1.06rem;
     }
+    #experiential-content {
+        font-size: 1.05rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -240px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -280px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -320px;
+    }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 374px) {
 	#profile-content {
@@ -217,6 +235,21 @@
     }
     #services-content {
         font-size: 1.1rem;
+    }
+    #experiential-content {
+        font-size: 1.15rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -250px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -330px;
     }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 374px) and (min-height: 810px) {
@@ -229,17 +262,63 @@
     #network-content #article-carousel {
         margin-top: 100px;
     }
+    #experiential-content {
+        font-size: 1.27rem;
+        letter-spacing: 1px;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -350px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -390px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -430px;
+    }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) {
 	#profile-content,
 	#services-content {
 		font-size: 1.2rem;
-	}
+    }
+    #experiential-content {
+        font-size: 1.3rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -330px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -370px;
+    }
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) and (min-height: 810px) {
 	#profile-content {
 		font-size: 1.25rem;
-	}
+    }
+    #experiential-content {
+        font-size: 1.22rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -330px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -370px;
+    }
 }
 </style>
 @endsection
@@ -324,7 +403,7 @@
     <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-start">
             <div class="col-12 lead-control">
-                <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
+                <p>We enable clients to amplify their brand and value through transformative events and co&#8209;branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
             </div>
             <div class="col-lg-4 lead-control">
                 <img src="{{ asset('images/leadingseries.png') }}" class="img-fluid">
