@@ -13,7 +13,325 @@
 
 @section('module-styles')
 <style>
-    .main-menu{position:absolute;top:44px;width:100%;height:calc(100% - 44px)}.menu.item{width:100%;height:calc(100% / 6)}.menu.item h1{padding:0 20px}.menu.item h1::after{position:absolute;right:20px;content:"+";color:#fff}.menu.item h1.active::after{right:22px;content:"\02013";color:#fff}.menu.content{height:0;padding:0 20px;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-ms-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.lead-control{display:none}.menu.content.active{height:calc(100% - 92px)}.lead-control.active{display:block}#profile-content{background-image:url("{{ asset('images/profile.jpg') }}");background-size:cover;background-position:left center;background-repeat:no-repeat;font-size:.9rem}#services-content{background-image:url("{{ asset('images/services.jpg') }}");background-size:cover;background-position:right center;background-repeat:no-repeat}#services-content .list-group{margin:0;padding:0}#services-content .list-group-item{margin:0;padding:0 0;border:none;background-color:transparent}.carousel-control-prev{left:-20px}.carousel-control-next{right:-20px}#experiential-content .row div:nth-of-type(2),#experiential-content .row div:nth-of-type(3),#experiential-content .row div:nth-of-type(4){position:absolute;left:0;right:0;margin:0 auto}#experiential-content .row div:nth-of-type(1){margin-top:10px}#experiential-content .row div:nth-of-type(2){width:280px;bottom:-220px}#experiential-content .row div:nth-of-type(3){width:300px;bottom:-270px}#experiential-content .row div:nth-of-type(4){width:180px;bottom:-320px}#connect-content{background-image:url("{{ asset('images/connect.jpg') }}");background-size:cover;background-position:center center;background-repeat:no-repeat}#connect-content .lead-control{padding-bottom:60px}@media (min-width:992px){.main-menu{top:52px;height:calc(100% - 52px)}.menu.item h1{padding:0 50px}.menu.item h1::after{right:50px}.menu.item h1.active::after{right:48px}.menu.content{padding:0 50px}#profile-content{font-size:1.3rem;letter-spacing:1.5px;text-align:justify}#services-content{font-size:1.6rem;letter-spacing:1.5px;text-align:justify}#services-content ul:nth-of-type(2){margin-left:40px}.carousel-control-prev{left:-40px}.carousel-control-next{right:-40px}#experiential-content{font-size:1.8rem;letter-spacing:1.5px;text-align:justify}#experiential-content .row div:nth-of-type(2),#experiential-content .row div:nth-of-type(3),#experiential-content .row div:nth-of-type(4){position:relative}#experiential-content .row div:nth-of-type(1){margin-top:50px}#experiential-content .row div:nth-of-type(2){width:100%;bottom:0}#experiential-content .row div:nth-of-type(3){width:100%;bottom:0}#experiential-content .row div:nth-of-type(4){width:100%;bottom:0}#connect-content{font-size:1.6rem;letter-spacing:1.5px;text-align:justify}#connect-content .lead-control{padding-bottom:20px}}@media (min-width:1200px){#profile-content{font-size:1.3rem}#services-content ul:nth-of-type(2){margin-left:120px}#experiential-content{font-size:1.8rem}#connect-content{font-size:1.7rem}}@media (min-height:720px){#network-content #article-carousel{margin-top:60px}}@media (pointer:none),(pointer:coarse) and (min-height:572px){#profile-content{font-size:1rem}}@media (pointer:none),(pointer:coarse) and (min-height:720px){#profile-content{font-size:1.2rem}#services-content{font-size:1.2rem}#network-content #article-carousel{margin-top:35%}#experiential-content{font-size:1.2rem}#experiential-content .row div:nth-of-type(1){margin-top:10px}#experiential-content .row div:nth-of-type(2){width:280px;bottom:-250px}#experiential-content .row div:nth-of-type(3){width:300px;bottom:-300px}#experiential-content .row div:nth-of-type(4){width:180px;bottom:-350px}#connect-content{font-size:1.2rem}}@media (pointer:none),(pointer:coarse) and (min-height:799px){#experiential-content .row div:nth-of-type(1){margin-top:10px}#experiential-content .row div:nth-of-type(2){width:280px;bottom:-280px}#experiential-content .row div:nth-of-type(3){width:300px;bottom:-330px}#experiential-content .row div:nth-of-type(4){width:180px;bottom:-380px}}
+.main-menu {
+	position: absolute;
+	top: 44px;
+	width: 100%;
+	height: calc(100% - 44px);
+}
+.menu.item {
+	width: 100%;
+	height: calc(100% / 6);
+}
+.menu.item h1 {
+	padding: 0 20px;
+}
+.menu.item h1::after {
+	position: absolute;
+	right: 20px;
+	content: '+';
+	color: #fff;
+}
+.menu.item h1.active::after {
+	right: 22px;
+	content: '\02013';
+	color: #fff;
+}
+.menu.content {
+	height: 0;
+	padding: 0 20px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.lead-control {
+	display: none;
+}
+.menu.content.active {
+	height: calc(100% - 100px);
+}
+.lead-control.active {
+	display: block;
+}
+#profile-content,
+#services-content {
+	font-size: 0.9rem;
+}
+#services-content {
+	background-image: url("{{ asset('images/services.jpg') }}");
+	background-size: cover;
+	background-position: right center;
+    background-repeat: no-repeat;
+}
+#services-content .list-group {
+	margin: 0;
+	padding: 0;
+}
+#services-content .list-group-item {
+	margin: 0;
+	padding: 0 0;
+	border: none;
+	background-color: transparent;
+}
+#network-content #article-carousel {
+    margin-top: 60px;
+}
+.carousel-control-prev {
+	left: -20px;
+}
+.carousel-control-next {
+	right: -20px;
+}
+#experiential-content {
+    font-size: 0.9rem;
+}
+#experiential-content .row div:nth-of-type(2),
+#experiential-content .row div:nth-of-type(3),
+#experiential-content .row div:nth-of-type(4) {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+#experiential-content .row div:nth-of-type(1) {
+	margin-top: 10px;
+}
+#experiential-content .row div:nth-of-type(2) {
+	width: 240px;
+	bottom: -200px;
+}
+#experiential-content .row div:nth-of-type(3) {
+	width: 260px;
+	bottom: -240px;
+}
+#experiential-content .row div:nth-of-type(4) {
+	width: 140px;
+	bottom: -280px;
+}
+#connect-content {
+	background-image: url("{{ asset('images/connect.jpg') }}");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#connect-content .lead-control {
+	padding-bottom: 20px;
+}
+@media (min-width: 992px) {
+	.main-menu {
+		top: 52px;
+		height: calc(100% - 52px);
+	}
+	.menu.item h1 {
+		padding: 0 50px;
+	}
+	.menu.item h1::after {
+		right: 50px;
+	}
+	.menu.item h1.active::after {
+		right: 48px;
+	}
+	.menu.content {
+		padding: 0 50px;
+    }
+    .menu.content.active {
+        height: calc(100% - 144px);
+    }
+	#profile-content {
+		font-size: 1.3rem;
+		letter-spacing: 1.5px;
+		text-align: justify;
+	}
+	#services-content {
+		font-size: 1.6rem;
+		letter-spacing: 1.5px;
+		text-align: justify;
+	}
+	#services-content ul:nth-of-type(2) {
+		margin-left: 40px;
+	}
+	.carousel-control-prev {
+		left: -40px;
+	}
+	.carousel-control-next {
+		right: -40px;
+	}
+	#experiential-content {
+		font-size: 1.8rem;
+		letter-spacing: 1.5px;
+		text-align: justify;
+	}
+	#experiential-content .row div:nth-of-type(2),
+	#experiential-content .row div:nth-of-type(3),
+	#experiential-content .row div:nth-of-type(4) {
+		position: relative;
+	}
+	#experiential-content .row div:nth-of-type(1) {
+		margin-top: 50px;
+	}
+	#experiential-content .row div:nth-of-type(2) {
+		width: 100%;
+		bottom: 0;
+	}
+	#experiential-content .row div:nth-of-type(3) {
+		width: 100%;
+		bottom: 0;
+	}
+	#experiential-content .row div:nth-of-type(4) {
+		width: 100%;
+		bottom: 0;
+	}
+	#connect-content {
+		font-size: 1.6rem;
+		letter-spacing: 1.5px;
+		text-align: justify;
+	}
+	#connect-content .lead-control {
+		padding-bottom: 20px;
+	}
+}
+@media (min-width: 1200px) {
+	#profile-content {
+		font-size: 1.3rem;
+	}
+	#services-content ul:nth-of-type(2) {
+		margin-left: 120px;
+	}
+	#experiential-content {
+		font-size: 1.8rem;
+	}
+	#connect-content {
+		font-size: 1.7rem;
+	}
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 359px) {
+	#profile-content {
+		font-size: 1.03rem;
+    }
+    #services-content {
+        font-size: 1.06rem;
+    }
+    #experiential-content {
+        font-size: 1.05rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -240px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -280px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -320px;
+    }
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 374px) {
+	#profile-content {
+		font-size: 1.08rem;
+    }
+    #services-content {
+        font-size: 1.1rem;
+    }
+    #experiential-content {
+        font-size: 1.15rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -250px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -330px;
+    }
+    #connect-content {
+        font-size: 1rem;
+    }
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 374px) and (min-height: 810px) {
+	#profile-content {
+		font-size: 1.2rem;
+    }
+    #services-content {
+        font-size: 1.3rem;
+    }
+    #network-content #article-carousel {
+        margin-top: 100px;
+    }
+    #experiential-content {
+        font-size: 1.27rem;
+        letter-spacing: 1px;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -350px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -390px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -430px;
+    }
+    #connect-content {
+        font-size: 1.2rem;
+    }
+    #connect-content .lead-control {
+		padding-bottom: 40px;
+	}
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 410px) {
+	#profile-content,
+	#services-content {
+		font-size: 1.2rem;
+    }
+    #experiential-content {
+        font-size: 1.3rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -330px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -370px;
+    }
+    #connect-content {
+        font-size: 1.1rem;
+    }
+}
+@media (pointer: none), (pointer: coarse) and (min-width: 410px) and (min-height: 810px) {
+	#profile-content {
+		font-size: 1.25rem;
+    }
+    #experiential-content {
+        font-size: 1.22rem;
+    }
+    #experiential-content .row div:nth-of-type(2) {
+	    width: 240px;
+	    bottom: -290px;
+    }
+    #experiential-content .row div:nth-of-type(3) {
+        width: 260px;
+        bottom: -330px;
+    }
+    #experiential-content .row div:nth-of-type(4) {
+        width: 140px;
+        bottom: -370px;
+    }
+}
 </style>
 @endsection
 
@@ -97,7 +415,7 @@
     <div id="experiential-content" class="menu content bg-gray-5 ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-start">
             <div class="col-12 lead-control">
-                <p>We enable clients to amplify their brand and value through transformative events and co-branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
+                <p>We enable clients to amplify their brand and value through transformative events and co&#8209;branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
             </div>
             <div class="col-lg-4 lead-control">
                 <img src="{{ asset('images/leadingseries.png') }}" class="img-fluid">
@@ -130,6 +448,116 @@
 
 @section('module-scripts')
 <script type="text/javascript">
-    function getCurrentMedia(){return window.matchMedia("(min-width: 992px)").matches?"desktop":window.matchMedia("(min-width: 768px)").matches?"tablet":"mobile"}function toggleMenu(offset,label,content){$("html, body").animate({scrollTop:offset}),$(label).toggleClass("active"),$(content).toggleClass("active"),$(content).find(".lead-control").toggleClass("active")}function openMenu(offset,label,content){setTimeout((function(){$("html, body").animate({scrollTop:offset}),$(label).addClass("active"),$(content).addClass("active"),$(content).find(".lead-control").addClass("active")}),1e3)}function closeAllMenu(control,index){for(let i=0;i<control.label.length;i++)i!=index&&($(control.label[i]).removeClass("active"),$(control.content[i]).removeClass("active"),$(control.content[i]).find(".lead-control").removeClass("active"))}$(()=>{var control={menu:$(".menu.item"),label:$(".menu.item h1"),content:$(".menu.content"),offset:[$("#profile").offset().top-52,$("#services").offset().top-52,$("#network").offset().top-52,$("#originals").offset().top-52,$("#experiential").offset().top-52,$("#connect").offset().top-52],index:0},_articles=$("#network-content .carousel-inner"),url="";for(let i=0;i<15;i++){switch(i){case 0:url="https://www.hollywoodreporter.com/news/netflix-acquires-filipino-rom-girl-allergic-wifi-1229889";break;case 1:url="https://variety.com/2019/tv/asia/hbo-asia-renews-halfworlds-third-season-series-in-philippines-1203419572/";break;case 2:url="https://decider.com/2018/04/09/amo-netflix-review/";break;case 3:url="https://screenanarchy.com/2016/11/seclusion-trailer-in-erik-matti.html";break;case 4:url="https://www.economist.com/asia/2015/11/21/she-once-was-lost";break;case 5:url="https://www.imdb.com/news/ni62702733";break;case 6:url="https://tv5.espn.com/story/_/id/28258103/sibol-dota-2-team-gives-ph-another-gold-medal-esports";break;case 7:url="https://onenews.ph/phl-esports-bets-seen-to-lead-in-sea-games";break;case 8:url="https://news.abs-cbn.com/sports/12/08/19/sea-games-pinoy-mobile-legends-team-wins-first-esports-gold";break;case 9:url="https://www.gmanetwork.com/news/showbiz/chikaminute/704503/rocco-nacino-topbills-new-movie-write-about-love/story/";break;case 10:url="https://www.rappler.com/entertainment/music/244519-yeng-constantino-ikaw-ang-akin-write-about-love";break;case 11:url="https://sports.inquirer.net/379065/uncanny-heroes";break;case 12:url="https://www.preview.ph/beauty/5-derma-approved-ways-to-look-like-a-star-adv-con-pr";break;case 13:url="https://www.spin.ph/life/guide/sea-games-viewing-guide-a1374-20191119";break;case 14:url="https://www.esquiremag.ph/money/capital/c-estates-is-poised-to-democratize-the-real-estate-market-a1926-20190716"}var index,href;$(_articles).append(`<div class="carousel-item ${0==i?"active":""}">\n\t\t\t\t<a href=${href=url} target="_blank">\n\t\t\t\t\t<img src="{{ asset('images/articles/a${index=i}.jpg') }}" width="80%" alt="...">\n\t\t\t\t</a>\n\t\t\t</div>`)}$(control.menu).on("click",(function(event){control.index=control.menu.index(this),closeAllMenu(control,control.index),3!=control.index&&toggleMenu(control.offset[control.index],control.label[control.index],control.content[control.index])}))}),$(window).on("load",(function(){var urlParams;switch(new URLSearchParams(window.location.search).get("page")){case"profile":openMenu($("#profile").offset().top-52,$("#profile h1"),$("#profile-content"));break;case"services":openMenu($("#services").offset().top-52,$("#services h1"),$("#services-content"));break;case"network":openMenu($("#network").offset().top-52,$("#network h1"),$("#network-content"));break;case"originals":openMenu($("#originals").offset().top-52,$("#originals h1"),$("#originals-content"));break;case"experiential":openMenu($("#experiential").offset().top-52,$("#experiential h1"),$("#experiential-content"));break;case"connect":openMenu($("#connect").offset().top-52,$("#connect h1"),$("#connect-content"));break;default:$(window).scrollTop(0)}}));
+function getCurrentMedia() {
+	return window.matchMedia('(min-width: 992px)').matches ? 'desktop' : window.matchMedia('(min-width: 768px)').matches ? 'tablet' : 'mobile';
+}
+function toggleMenu(offset, label, content) {
+	$('html, body').animate({ scrollTop: offset }), $(label).toggleClass('active'), $(content).toggleClass('active'), $(content).find('.lead-control').toggleClass('active');
+}
+function openMenu(offset, label, content) {
+	setTimeout(function () {
+		$('html, body').animate({ scrollTop: offset }), $(label).addClass('active'), $(content).addClass('active'), $(content).find('.lead-control').addClass('active');
+	}, 1e3);
+}
+function closeAllMenu(control, index) {
+	for (let i = 0; i < control.label.length; i++) i != index && ($(control.label[i]).removeClass('active'), $(control.content[i]).removeClass('active'), $(control.content[i]).find('.lead-control').removeClass('active'));
+}
+$(() => {
+	var control = {
+        menu: $('.menu.item'),
+        label: $('.menu.item h1'),
+        content: $('.menu.content'),
+        offset: [
+            $('#profile').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
+            $('#services').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
+            $('#network').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
+            $('#originals').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
+            $('#experiential').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
+            $('#connect').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52)
+        ],
+        index: 0
+    };
+		_articles = $('#network-content .carousel-inner'),
+		url = '';
+	for (let i = 0; i < 15; i++) {
+		switch (i) {
+			case 0:
+				url = 'https://www.hollywoodreporter.com/news/netflix-acquires-filipino-rom-girl-allergic-wifi-1229889';
+				break;
+			case 1:
+				url = 'https://variety.com/2019/tv/asia/hbo-asia-renews-halfworlds-third-season-series-in-philippines-1203419572/';
+				break;
+			case 2:
+				url = 'https://decider.com/2018/04/09/amo-netflix-review/';
+				break;
+			case 3:
+				url = 'https://screenanarchy.com/2016/11/seclusion-trailer-in-erik-matti.html';
+				break;
+			case 4:
+				url = 'https://www.economist.com/asia/2015/11/21/she-once-was-lost';
+				break;
+			case 5:
+				url = 'https://www.imdb.com/news/ni62702733';
+				break;
+			case 6:
+				url = 'https://tv5.espn.com/story/_/id/28258103/sibol-dota-2-team-gives-ph-another-gold-medal-esports';
+				break;
+			case 7:
+				url = 'https://onenews.ph/phl-esports-bets-seen-to-lead-in-sea-games';
+				break;
+			case 8:
+				url = 'https://news.abs-cbn.com/sports/12/08/19/sea-games-pinoy-mobile-legends-team-wins-first-esports-gold';
+				break;
+			case 9:
+				url = 'https://www.gmanetwork.com/news/showbiz/chikaminute/704503/rocco-nacino-topbills-new-movie-write-about-love/story/';
+				break;
+			case 10:
+				url = 'https://www.rappler.com/entertainment/music/244519-yeng-constantino-ikaw-ang-akin-write-about-love';
+				break;
+			case 11:
+				url = 'https://sports.inquirer.net/379065/uncanny-heroes';
+				break;
+			case 12:
+				url = 'https://www.preview.ph/beauty/5-derma-approved-ways-to-look-like-a-star-adv-con-pr';
+				break;
+			case 13:
+				url = 'https://www.spin.ph/life/guide/sea-games-viewing-guide-a1374-20191119';
+				break;
+			case 14:
+				url = 'https://www.esquiremag.ph/money/capital/c-estates-is-poised-to-democratize-the-real-estate-market-a1926-20190716';
+		}
+		var index, href;
+		$(_articles).append(`<div class="carousel-item ${0 == i ? 'active' : ''}"><a href=${(href = url)} target="_blank"><img src="{{ asset('images/articles/a${(index = i)}.jpg') }}" width="80%" alt="..."></a></div>`);
+	}
+	$(control.menu).on('click', function (event) {
+		(control.index = control.menu.index(this)), closeAllMenu(control, control.index), 3 != control.index && toggleMenu(control.offset[control.index], control.label[control.index], control.content[control.index]);
+	});
+}),
+	$(window).on('load', function () {
+		var urlParams;
+		switch (new URLSearchParams(window.location.search).get('page')) {
+			case 'profile':
+				openMenu($('#profile').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#profile h1'), $('#profile-content'));
+				break;
+			case 'services':
+				openMenu($('#services').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#services h1'), $('#services-content'));
+				break;
+			case 'network':
+				openMenu($('#network').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#network h1'), $('#network-content'));
+				break;
+			case 'originals':
+				openMenu($('#originals').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#originals h1'), $('#originals-content'));
+				break;
+			case 'experiential':
+				openMenu($('#experiential').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#experiential h1'), $('#experiential-content'));
+				break;
+			case 'connect':
+				openMenu($('#connect').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52), $('#connect h1'), $('#connect-content'));
+				break;
+			default:
+				$(window).scrollTop(0);
+		}
+	});
+
 </script>
 @endsection
