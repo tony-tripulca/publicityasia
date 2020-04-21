@@ -60,10 +60,8 @@
 	font-size: 0.9rem;
 }
 #services-content {
-	background-image: url("{{ asset('images/services.jpg') }}");
-	background-size: cover;
-	background-position: right center;
-    background-repeat: no-repeat;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 #services-content .list-group {
 	margin: 0;
@@ -74,6 +72,42 @@
 	padding: 0 0;
 	border: none;
 	background-color: transparent;
+}
+#services-content {
+    width: 100%;
+    height: calc((100% - 44px) * 2);
+}
+#services-content div[class*="row"]:nth-child(1) {
+    height: calc(50% - 60px);
+}
+#services-content div[class*="row"]:nth-child(2) {
+    height: calc((100% / 6) - 88px);
+}
+#services-content div[class*="row"]:nth-child(3) {
+    height: calc(50% - 60px);
+}
+#services-content div[class*="row"]:nth-child(2) h1,
+#services-content div[class*="row"]:nth-child(3) .lead-control {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#services-content .image-holder {
+    width: 100%;
+    height: 100%;
+}
+#services-content .image-holder img {
+    width: 100%;
+    height: 100%;
+}
+#services-content .page-down-button {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border: none;
+	background-color: transparent;
+	font-size: 2rem;
 }
 #network-content #article-carousel {
     margin-top: 60px;
@@ -143,7 +177,13 @@
 		font-size: 1.3rem;
 		letter-spacing: 1.5px;
 		text-align: justify;
-	}
+    }
+    #services-content {
+        background-image: url("{{ asset('images/services.jpg') }}");
+        background-size: cover;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
 	#services-content {
 		font-size: 1.6rem;
 		letter-spacing: 1.5px;
@@ -355,10 +395,19 @@
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
     </div>
-    <div id="services-content" class="menu content bg-nero ftra-heavy text-white">
-        <div class="row no-gutters h-100 d-flex align-items-center">         
+    <div id="services-content" class="menu content bg-gray-2 ftra-heavy text-white">
+        <div class="row no-gutters">
+            <div class="col-12 image-holder">
+                <img src="{{ asset('images/services_m.jpg') }}">
+                <a href="#services-p2" class="page-down-button text-white"><span class="ti-angle-down"></span></a>
+            </div>  
+        </div>
+        <div id="services-p2" class="row no-gutters d-flex align-items-center">
+            <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
+        </div>
+        <div class="row no-gutters d-flex align-items-center">
             <div class="col-12 lead-control">
-                <ul class="list-group d-inline-block">
+                <ul class="list-group">
                     <li class="list-group-item">Media Relations</li>
                     <li class="list-group-item">Celebrity Acquisition</li>
                     <li class="list-group-item">Creative & Strategy</li>
@@ -369,7 +418,7 @@
                     <li class="list-group-item">Digital & Social Media</li>
                     <li class="list-group-item">Event & Activation</li>
                 </ul>
-                <ul class="list-group d-inline-block">
+                <ul class="list-group">
                     <li class="list-group-item">International PR</li>
                     <li class="list-group-item">Influencer Selection</li>
                     <li class="list-group-item">Public Imaging</li>
