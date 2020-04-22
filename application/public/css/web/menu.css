@@ -123,31 +123,22 @@ body {
 	right: -20px;
 }
 #experiential-content {
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 }
-#experiential-content .row div:nth-of-type(2),
-#experiential-content .row div:nth-of-type(3),
-#experiential-content .row div:nth-of-type(4) {
-	position: absolute;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-}
-#experiential-content .row div:nth-of-type(1) {
-	margin-top: 10px;
-}
-#experiential-content .row div:nth-of-type(2) {
+
+#experiential-content .row div:nth-of-type(2) img {
 	width: 240px;
-	bottom: -200px;
 }
-#experiential-content .row div:nth-of-type(3) {
-	width: 260px;
-	bottom: -240px;
+
+#experiential-content .row div:nth-of-type(3) img {
+	width: 270px;
 }
-#experiential-content .row div:nth-of-type(4) {
+
+#experiential-content .row div:nth-of-type(4) img {
 	width: 140px;
-	bottom: -280px;
+	padding-bottom: 40px;
 }
+
 #connect-content {
 	background-image: url("../../images/connect_m.jpg");
 	background-size: cover;
@@ -204,26 +195,6 @@ body {
 		letter-spacing: 1.5px;
 		text-align: justify;
 	}
-	#experiential-content .row div:nth-of-type(2),
-	#experiential-content .row div:nth-of-type(3),
-	#experiential-content .row div:nth-of-type(4) {
-		position: relative;
-	}
-	#experiential-content .row div:nth-of-type(1) {
-		margin-top: 50px;
-	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 100%;
-		bottom: 0;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 100%;
-		bottom: 0;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 100%;
-		bottom: 0;
-	}
 	#connect-content {
 		background-image: url("../../images/connect.jpg");
 		background-position: center center;
@@ -258,18 +229,6 @@ body {
 	#experiential-content {
 		font-size: 1.05rem;
 	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 240px;
-		bottom: -240px;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 260px;
-		bottom: -280px;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 140px;
-		bottom: -320px;
-	}
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 374px) {
 	#profile-content {
@@ -281,17 +240,8 @@ body {
 	#experiential-content {
 		font-size: 1.15rem;
 	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 240px;
-		bottom: -250px;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 260px;
-		bottom: -290px;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 140px;
-		bottom: -330px;
+	#experiential-content .row div:nth-of-type(4) img {
+		padding-bottom: 60px;
 	}
 	#connect-content {
 		font-size: 1rem;
@@ -312,18 +262,6 @@ body {
 		font-size: 1.27rem;
 		letter-spacing: 1px;
 	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 240px;
-		bottom: -350px;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 260px;
-		bottom: -390px;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 140px;
-		bottom: -430px;
-	}
 	#connect-content {
 		font-size: 1.2rem;
 	}
@@ -336,18 +274,6 @@ body {
 	#experiential-content {
 		font-size: 1.3rem;
 	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 240px;
-		bottom: -290px;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 260px;
-		bottom: -330px;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 140px;
-		bottom: -370px;
-	}
 	#connect-content {
 		font-size: 1.1rem;
 	}
@@ -359,17 +285,5 @@ body {
 	}
 	#experiential-content {
 		font-size: 1.22rem;
-	}
-	#experiential-content .row div:nth-of-type(2) {
-		width: 240px;
-		bottom: -290px;
-	}
-	#experiential-content .row div:nth-of-type(3) {
-		width: 260px;
-		bottom: -330px;
-	}
-	#experiential-content .row div:nth-of-type(4) {
-		width: 140px;
-		bottom: -370px;
 	}
 }
