@@ -1,33 +1,33 @@
 @font-face {
 	font-family: FtraHv;
-	src: url("../../fonts/FtraHv.eot");
-	src: url("../../fonts/FtraHv.eot?#iefix")
+	src: url("../fonts/FtraHv.eot");
+	src: url("../fonts/FtraHv.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../fonts/FtraHv.ttf") format("truetype");
+		url("../fonts/FtraHv.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: FtraMd;
-	src: url("../../fonts/FtraMd.eot");
-	src: url("../../fonts/FtraMd.eot?#iefix")
+	src: url("../fonts/FtraMd.eot");
+	src: url("../fonts/FtraMd.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../fonts/FtraMd.ttf") format("truetype");
+		url("../fonts/FtraMd.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Montserrat Semi Bold";
-	src: url("../../fonts/Montserrat-SemiBold.eot");
-	src: url("../../fonts/Montserrat-SemiBold.eot?#iefix")
+	src: url("../fonts/Montserrat-SemiBold.eot");
+	src: url("../fonts/Montserrat-SemiBold.eot?#iefix")
 			format("embedded-opentype"),
-		url("../../fonts/Montserrat-SemiBold.ttf") format("truetype");
+		url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: "Couture Bold";
-	src: url("../../fonts/couture-bld.otf");
+	src: url("../fonts/couture-bld.otf");
 	font-weight: 700;
 	font-style: normal;
 }
