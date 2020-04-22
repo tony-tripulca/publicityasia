@@ -13,6 +13,9 @@
 
 @section('module-styles')
 <style>
+html, body {
+	scroll-behavior: smooth;
+}
 .main-menu {
 	position: absolute;
 	top: 44px;
@@ -40,17 +43,17 @@
 .menu.content {
 	height: 0;
 	padding: 0 20px;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 .lead-control {
 	display: none;
 }
 .menu.content.active {
-	height: calc(100% - 100px);
+	height: calc(100% - (100% / 6));
 }
 .lead-control.active {
 	display: block;
@@ -59,9 +62,29 @@
 #services-content {
 	font-size: 0.9rem;
 }
+#services-dummy {
+	position: fixed;
+	top: 44px;
+	left: 0px;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: calc(100% / 6);
+	padding: 40px 20px;
+}
+#services-dummy h1::after {
+	position: absolute;
+	right: 22px;
+	z-index: 15;
+	content: '\02013';
+	color: #fff;
+}
 #services-content {
     padding-left: 0px;
     padding-right: 0px;
+}
+#services-content.active {
+	height: calc((100% - (100% / 6)) * 2);
 }
 #services-content .list-group {
 	margin: 0;
@@ -73,21 +96,16 @@
 	border: none;
 	background-color: transparent;
 }
-#services-content {
-    width: 100%;
-    height: calc((100% - 44px) * 2);
-}
-#services-content div[class*="row"]:nth-child(1) {
-    height: calc(50% - 60px);
-}
+#services-content div[class*="row"]:nth-child(1),
 #services-content div[class*="row"]:nth-child(2) {
-    height: calc((100% / 6) - 88px);
+    height: 50%;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-#services-content div[class*="row"]:nth-child(3) {
-    height: calc(50% - 60px);
-}
-#services-content div[class*="row"]:nth-child(2) h1,
-#services-content div[class*="row"]:nth-child(3) .lead-control {
+#services-content div[class*="row"]:nth-child(2) .lead-control {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -395,17 +413,17 @@
     <div id="services" class="menu item bg-gray-2 d-flex align-items-center">
         <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
     </div>
+	<div id="services-dummy" class="bg-gray-2">
+        <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
+    </div>
     <div id="services-content" class="menu content bg-gray-2 ftra-heavy text-white">
         <div class="row no-gutters">
-            <div class="col-12 image-holder">
+            <div class="col-12 lead-control image-holder">
                 <img src="{{ asset('images/services_m.jpg') }}">
-                <a href="#services-p2" class="page-down-button text-white"><span class="ti-angle-down"></span></a>
+                <button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
             </div>  
         </div>
-        <div id="services-p2" class="row no-gutters d-flex align-items-center">
-            <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
-        </div>
-        <div class="row no-gutters d-flex align-items-center">
+        <div id="services-list" class="row no-gutters d-flex align-items-center">
             <div class="col-12 lead-control">
                 <ul class="list-group">
                     <li class="list-group-item">Media Relations</li>
@@ -497,11 +515,19 @@
 
 @section('module-scripts')
 <script type="text/javascript">
+function init() {
+	getElements();
+	getCurrentMenuOffset();
+	getCurrentMenuHeight();
+	getCurrentContentHeight();
+}
 function getCurrentMedia() {
 	return window.matchMedia('(min-width: 992px)').matches ? 'desktop' : window.matchMedia('(min-width: 768px)').matches ? 'tablet' : 'mobile';
 }
 function toggleMenu(offset, label, content) {
-	$('html, body').animate({ scrollTop: offset }), $(label).toggleClass('active'), $(content).toggleClass('active'), $(content).find('.lead-control').toggleClass('active');
+	$(label).toggleClass('active'),
+	$(content).toggleClass('active'),
+	$(content).find('.lead-control').toggleClass('active');
 }
 function openMenu(offset, label, content) {
 	setTimeout(function () {
@@ -509,23 +535,51 @@ function openMenu(offset, label, content) {
 	}, 1e3);
 }
 function closeAllMenu(control, index) {
-	for (let i = 0; i < control.label.length; i++) i != index && ($(control.label[i]).removeClass('active'), $(control.content[i]).removeClass('active'), $(control.content[i]).find('.lead-control').removeClass('active'));
+	for (let i = 0; i < control.label.length; i++) i != index && ($(control.label[i]).removeClass('active'), $(control.content.el[i]).removeClass('active'), $(control.content.el[i]).find('.lead-control').removeClass('active'));
 }
+
+function getElements() {
+	control.menu.el = $('.menu.item');
+	control.content.el = $('.menu.content');
+	control.label = $('.menu.item h1');
+}
+
+function getCurrentMenuOffset() {
+	for(var i = 0; i < control.menu.el.length; i++) {
+		control.menu.offset[i] = $(control.menu.el[i]).offset().top - (getCurrentMedia() != 'desktop' ? 44 : 52);
+	}
+}
+
+function getCurrentMenuHeight() {
+	for(var i = 0; i < control.menu.el.length; i++) {
+		control.menu.height[i] = $(control.menu.el[i]).height();
+	}
+}
+
+function getCurrentContentHeight() {
+	for(var i = 0; i < control.content.el.length; i++) {
+		control.content.height[i] = $(control.content.el[i]).height();
+	}
+}
+
+// Globals
+var control = {
+	menu: {
+		el: [],
+		offset: [],
+		height: []
+	},
+	label: [],
+	content: {
+		el: [],
+		offset: [],
+		height: []
+	},
+	index: 0
+};
 $(() => {
-	var control = {
-        menu: $('.menu.item'),
-        label: $('.menu.item h1'),
-        content: $('.menu.content'),
-        offset: [
-            $('#profile').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
-            $('#services').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
-            $('#network').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
-            $('#originals').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
-            $('#experiential').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52),
-            $('#connect').offset().top - (getCurrentMedia() == 'mobile' ? 44 : 52)
-        ],
-        index: 0
-    };
+	init();
+
 		_articles = $('#network-content .carousel-inner'),
 		url = '';
 	for (let i = 0; i < 15; i++) {
@@ -578,8 +632,58 @@ $(() => {
 		var index, href;
 		$(_articles).append(`<div class="carousel-item ${0 == i ? 'active' : ''}"><a href=${(href = url)} target="_blank"><img src="{{ asset('images/articles/a${(index = i)}.jpg') }}" width="80%" alt="..."></a></div>`);
 	}
-	$(control.menu).on('click', function (event) {
-		(control.index = control.menu.index(this)), closeAllMenu(control, control.index), 3 != control.index && toggleMenu(control.offset[control.index], control.label[control.index], control.content[control.index]);
+	$(control.menu.el).on('click', function (event) {
+		getCurrentMenuOffset();
+		getCurrentMenuHeight();
+		getCurrentContentHeight();
+
+		control.index = control.menu.el.index(this);
+
+		if(control.index != 3) {
+			toggleMenu(
+				control.menu.offset[control.index],
+				control.label[control.index],
+				control.content.el[control.index]
+			);
+		}
+
+		// if($(control.content.el[1]).hasClass('active')) {
+		// 	fixedMenu(control);
+		// } else {
+		// 	relativeMenu(control);
+		// }
+	});
+
+	$(window).on('scroll', function() {
+		console.clear();
+		console.log($(window).scrollTop());
+		console.log(control.menu.offset[1]);
+		console.log($(control.content.el[1]).height());
+
+		if(getCurrentMedia() != "desktop" &&
+			$(window).scrollTop() >= control.menu.offset[1] &&
+			$(window).scrollTop() <= (
+				($(control.content.el[1]).height() / 2) + control.menu.height[1] + 44
+			)
+		) {
+			console.log(true);
+			if($(control.content.el[1]).hasClass('active')) {
+				$('#services-dummy').show();
+				$('.page-down-button').show();
+			}
+		} else {
+			console.log(false);
+			if($(control.content.el[1]).hasClass('active')) {
+				$('#services-dummy').hide();
+				$('.page-down-button').hide();
+			}
+		}
+	});
+
+	$('.page-down-button').on('click',function() {
+		$(window).scrollTop(
+			$('#services-list').offset().top - (control.menu.height[1] + 42)
+		);
 	});
 }),
 	$(window).on('load', function () {
