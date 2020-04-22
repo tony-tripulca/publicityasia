@@ -66,8 +66,8 @@
 <body> 
     <div class="loader">
         <div class="holder d-flex align-items-center justify-content-center">
-            <p class="lead-1 couture-bold text-25 text-md-40 text-lg-60 space-07">PUBLICITY</p>
-            <p class="lead-2 couture-bold text-25 text-md-40 text-lg-60 space-07">ASIA</p>
+            <p class="lead-1 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">PUBLICITY</p>
+            <p class="lead-2 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">ASIA</p>
         </div>
     </div>
 

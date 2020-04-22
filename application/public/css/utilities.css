@@ -355,7 +355,19 @@
 		font-size: 7rem;
 	}
 	.space-lg-01 {
-		letter-spacing: 0.1px;
+		letter-spacing: -9px;
+	}
+	.space-lg-05 {
+		letter-spacing: -5px;
+	}
+	.space-lg-07 {
+		letter-spacing: -3px;
+	}
+	.space-lg-09 {
+		letter-spacing: -1px;
+	}
+	.space-lg-10 {
+		letter-spacing: 1px;
 	}
 	.space-lg-10 {
 		letter-spacing: 1px;
