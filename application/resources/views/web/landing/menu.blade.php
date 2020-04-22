@@ -117,13 +117,13 @@
             <div class="col-12 lead-control">
                 <p>We enable clients to amplify their brand and value through transformative events and co&#8209;branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
             </div>
-            <div class="col-12 col-lg-4 lead-control text-center">
+            <div class="col-12 col-lg-4 lead-control text-center text-lg-left">
                 <img src="{{ asset('images/leadingseries.png') }}">
             </div>
-            <div class="col-12 col-lg-5 lead-control text-center">
+            <div class="col-12 col-lg-6 lead-control text-center">
                 <img src="{{ asset('images/womanforward.png') }}">
             </div>
-            <div class="col-12 col-lg-2 lead-control text-center">
+            <div class="col-12 col-lg-2 lead-control text-center text-lg-right">
                 <img src="{{ asset('images/idolfest.png') }}">
             </div>
         </div>

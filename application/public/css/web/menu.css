@@ -197,6 +197,18 @@ body {
 		letter-spacing: 1.5px;
 		text-align: justify;
 	}
+	#experiential-content .row div:nth-of-type(2) img {
+		width: 300px;
+	}
+	
+	#experiential-content .row div:nth-of-type(3) img {
+		width: 360px;
+	}
+	
+	#experiential-content .row div:nth-of-type(4) img {
+		width: 150px;
+		padding-top: 10px;
+	}
 	#connect-content {
 		background-image: url("../../images/connect.jpg");
 		background-position: center center;
@@ -219,6 +231,18 @@ body {
 	}
 	#experiential-content {
 		font-size: 1.8rem;
+	}
+	#experiential-content .row div:nth-of-type(2) img {
+		width: 360px;
+	}
+	
+	#experiential-content .row div:nth-of-type(3) img {
+		width: 420px;
+	}
+	
+	#experiential-content .row div:nth-of-type(4) img {
+		width: 210px;
+		padding-top: 10px;
 	}
 	#connect-content {
 		font-size: 1.7rem;
