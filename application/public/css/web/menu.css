@@ -149,13 +149,10 @@ body {
 	bottom: -280px;
 }
 #connect-content {
-	background-image: url("../../images/connect.jpg");
+	background-image: url("../../images/connect_m.jpg");
 	background-size: cover;
-	background-position: center center;
+	background-position: right center;
 	background-repeat: no-repeat;
-}
-#connect-content .lead-control {
-	padding-bottom: 20px;
 }
 @media (min-width: 992px) {
 	.main-menu {
@@ -228,12 +225,13 @@ body {
 		bottom: 0;
 	}
 	#connect-content {
+		background-image: url("../../images/connect.jpg");
+		background-position: center center;
+	}
+	#connect-content {
 		font-size: 1.6rem;
 		letter-spacing: 1.5px;
 		text-align: justify;
-	}
-	#connect-content .lead-control {
-		padding-bottom: 20px;
 	}
 }
 @media (min-width: 1200px) {
@@ -328,9 +326,6 @@ body {
 	}
 	#connect-content {
 		font-size: 1.2rem;
-	}
-	#connect-content .lead-control {
-		padding-bottom: 40px;
 	}
 }
 @media (pointer: none), (pointer: coarse) and (min-width: 410px) {
