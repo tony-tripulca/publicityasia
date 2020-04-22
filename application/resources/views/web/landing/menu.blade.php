@@ -50,15 +50,15 @@
         <h1 class="ftra-medium text-25 text-lg-30 text-red">SERVICES</h1>
     </div>
     <div id="services-content" class="menu content bg-gray-2 ftra-heavy text-white">
-        <div class="row no-gutters">
+        <div class="row no-gutters d-block d-lg-none">
             <div class="col-12 lead-control image-holder">
                 <img src="{{ asset('images/services_m.jpg') }}">
                 <button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
             </div>  
         </div>
-        <div id="services-list" class="row no-gutters d-flex align-items-start">
+        <div id="services-list" class="row no-gutters h-100 d-flex align-items-start align-items-lg-center">
             <div class="col-12 lead-control">
-                <ul class="list-group">
+                <ul class="list-group d-inline-block">
                     <li class="list-group-item">Media Relations</li>
                     <li class="list-group-item">Celebrity Acquisition</li>
                     <li class="list-group-item">Creative & Strategy</li>
@@ -69,7 +69,7 @@
                     <li class="list-group-item">Digital & Social Media</li>
                     <li class="list-group-item">Event & Activation</li>
                 </ul>
-                <ul class="list-group">
+                <ul class="list-group d-inline-block">
                     <li class="list-group-item">International PR</li>
                     <li class="list-group-item">Influencer Selection</li>
                     <li class="list-group-item">Public Imaging</li>
