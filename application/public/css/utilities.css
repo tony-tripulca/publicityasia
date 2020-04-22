@@ -1,0 +1,434 @@
+@font-face {
+	font-family: FtraHv;
+	src: url("../../fonts/FtraHv.eot");
+	src: url("../../fonts/FtraHv.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../fonts/FtraHv.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: FtraMd;
+	src: url("../../fonts/FtraMd.eot");
+	src: url("../../fonts/FtraMd.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../fonts/FtraMd.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Montserrat Semi Bold";
+	src: url("../../fonts/Montserrat-SemiBold.eot");
+	src: url("../../fonts/Montserrat-SemiBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("../../fonts/Montserrat-SemiBold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Couture Bold";
+	src: url("../../fonts/couture-bld.otf");
+	font-weight: 700;
+	font-style: normal;
+}
+.ftra-heavy {
+	font-family: FtraHv;
+}
+.ftra-medium {
+	font-family: FtraMd;
+}
+.montserrat-semi-bold {
+	font-family: "font-family: " FtraMd ";";
+}
+.couture-bold {
+	font-family: "Couture Bold";
+}
+.text-red {
+	color: red;
+}
+.text-nero {
+	color: #252525;
+}
+.text-01 {
+	font-size: 0.1rem;
+}
+.text-08 {
+	font-size: 0.8rem;
+}
+.text-10 {
+	font-size: 1rem;
+}
+.text-12 {
+	font-size: 1.2rem;
+}
+.text-13 {
+	font-size: 1.3rem;
+}
+.text-15 {
+	font-size: 1.5rem;
+}
+.text-16 {
+	font-size: 1.6rem;
+}
+.text-20 {
+	font-size: 2rem;
+}
+.text-25 {
+	font-size: 2.5rem;
+}
+.text-30 {
+	font-size: 3rem;
+}
+.text-35 {
+	font-size: 3.5rem;
+}
+.text-40 {
+	font-size: 4rem;
+}
+.text-45 {
+	font-size: 4.5rem;
+}
+.line-01 {
+	line-height: 0.1;
+}
+.line-05 {
+	line-height: 0.5;
+}
+.line-07 {
+	line-height: 0.7;
+}
+.line-10 {
+	line-height: 1;
+}
+.line-11 {
+	line-height: 1.1;
+}
+.line-12 {
+	line-height: 1.2;
+}
+.line-15 {
+	line-height: 1.5;
+}
+.line-20 {
+	line-height: 2;
+}
+.line-25 {
+	line-height: 2.5;
+}
+.line-30 {
+	line-height: 3;
+}
+.line-35 {
+	line-height: 3.5;
+}
+.space-01 {
+	letter-spacing: -9px;
+}
+.space-05 {
+	letter-spacing: -5px;
+}
+.space-09 {
+	letter-spacing: -1px;
+}
+.space-10 {
+	letter-spacing: 1px;
+}
+.space-15 {
+	letter-spacing: 1.5px;
+}
+.space-20 {
+	letter-spacing: 2px;
+}
+.space-25 {
+	letter-spacing: 2.5px;
+}
+.space-30 {
+	letter-spacing: 3px;
+}
+.space-35 {
+	letter-spacing: 3.5px;
+}
+.space-40 {
+	letter-spacing: 4px;
+}
+.space-45 {
+	letter-spacing: 4.5px;
+}
+.space-50 {
+	letter-spacing: 5px;
+}
+.space-55 {
+	letter-spacing: 5.5px;
+}
+.bg-red {
+	background-color: red;
+}
+.bg-nero {
+	background-color: #252525;
+}
+.bg-gray-1 {
+	background-color: #404040;
+}
+.bg-gray-2 {
+	background-color: #383838;
+}
+.bg-gray-3 {
+	background-color: #2e2e2e;
+}
+.bg-gray-4 {
+	background-color: #2a2a2a;
+}
+.bg-gray-5 {
+	background-color: #202020;
+}
+.bg-gray-6 {
+	background-color: #181818;
+}
+@media (min-width: 576px) {
+	.text-sm-01 {
+		font-size: 0.1rem;
+	}
+	.text-sm-10 {
+		font-size: 1rem;
+	}
+	.text-sm-20 {
+		font-size: 2rem;
+	}
+	.text-sm-30 {
+		font-size: 3rem;
+	}
+	.text-sm-35 {
+		font-size: 3.5rem;
+	}
+	.text-sm-40 {
+		font-size: 4rem;
+	}
+	.text-sm-45 {
+		font-size: 4.5rem;
+	}
+	.text-sm-50 {
+		font-size: 5rem;
+	}
+	.space-sm-01 {
+		letter-spacing: 0.1px;
+	}
+	.space-sm-10 {
+		letter-spacing: 1px;
+	}
+	.space-sm-15 {
+		letter-spacing: 1.5px;
+	}
+	.space-sm-20 {
+		letter-spacing: 2px;
+	}
+	.space-sm-25 {
+		letter-spacing: 2.5px;
+	}
+	.space-sm-30 {
+		letter-spacing: 3px;
+	}
+	.space-sm-35 {
+		letter-spacing: 3.5px;
+	}
+	.space-sm-40 {
+		letter-spacing: 4px;
+	}
+	.space-sm-45 {
+		letter-spacing: 4.5px;
+	}
+	.space-sm-50 {
+		letter-spacing: 5px;
+	}
+	.space-sm-55 {
+		letter-spacing: 5.5px;
+	}
+	.space-sm-60 {
+		letter-spacing: 6px;
+	}
+	.space-sm-65 {
+		letter-spacing: 6.5px;
+	}
+}
+@media (min-width: 768px) {
+	.text-md-01 {
+		font-size: 0.1rem;
+	}
+	.text-md-10 {
+		font-size: 1rem;
+	}
+	.text-md-20 {
+		font-size: 2rem;
+	}
+	.text-md-30 {
+		font-size: 3rem;
+	}
+	.text-md-35 {
+		font-size: 3.5rem;
+	}
+	.text-md-40 {
+		font-size: 4rem;
+	}
+	.text-md-45 {
+		font-size: 4.5rem;
+	}
+	.text-md-50 {
+		font-size: 5rem;
+	}
+	.space-md-01 {
+		letter-spacing: 0.1px;
+	}
+	.space-md-10 {
+		letter-spacing: 1px;
+	}
+	.space-md-15 {
+		letter-spacing: 1.5px;
+	}
+	.space-md-20 {
+		letter-spacing: 2px;
+	}
+	.space-md-25 {
+		letter-spacing: 2.5px;
+	}
+	.space-md-30 {
+		letter-spacing: 3px;
+	}
+	.space-md-35 {
+		letter-spacing: 3.5px;
+	}
+	.space-md-40 {
+		letter-spacing: 4px;
+	}
+	.space-md-45 {
+		letter-spacing: 4.5px;
+	}
+	.space-md-50 {
+		letter-spacing: 5px;
+	}
+	.space-md-55 {
+		letter-spacing: 5.5px;
+	}
+	.space-md-60 {
+		letter-spacing: 6px;
+	}
+	.space-md-65 {
+		letter-spacing: 6.5px;
+	}
+}
+@media (min-width: 992px) {
+	.text-lg-01 {
+		font-size: 0.1rem;
+	}
+	.text-lg-10 {
+		font-size: 1rem;
+	}
+	.text-lg-20 {
+		font-size: 2rem;
+	}
+	.text-lg-30 {
+		font-size: 3rem;
+	}
+	.text-lg-35 {
+		font-size: 3.5rem;
+	}
+	.text-lg-40 {
+		font-size: 4rem;
+	}
+	.text-lg-45 {
+		font-size: 4.5rem;
+	}
+	.text-lg-50 {
+		font-size: 5rem;
+	}
+	.text-lg-55 {
+		font-size: 5.5rem;
+	}
+	.text-lg-60 {
+		font-size: 6rem;
+	}
+	.text-lg-65 {
+		font-size: 6.5rem;
+	}
+	.text-lg-70 {
+		font-size: 7rem;
+	}
+	.space-lg-01 {
+		letter-spacing: 0.1px;
+	}
+	.space-lg-10 {
+		letter-spacing: 1px;
+	}
+	.space-lg-15 {
+		letter-spacing: 1.5px;
+	}
+	.space-lg-20 {
+		letter-spacing: 2px;
+	}
+	.space-lg-25 {
+		letter-spacing: 2.5px;
+	}
+	.space-lg-30 {
+		letter-spacing: 3px;
+	}
+	.space-lg-35 {
+		letter-spacing: 3.5px;
+	}
+	.space-lg-40 {
+		letter-spacing: 4px;
+	}
+	.space-lg-45 {
+		letter-spacing: 4.5px;
+	}
+	.space-lg-50 {
+		letter-spacing: 5px;
+	}
+	.space-lg-55 {
+		letter-spacing: 5.5px;
+	}
+}
+@media (min-width: 1200px) {
+	.text-xl-01 {
+		font-size: 0.1rem;
+	}
+	.text-xl-10 {
+		font-size: 1rem;
+	}
+	.text-xl-15 {
+		font-size: 1.5rem;
+	}
+	.text-xl-17 {
+		font-size: 1.7rem;
+	}
+	.text-xl-18 {
+		font-size: 1.8rem;
+	}
+	.text-xl-20 {
+		font-size: 2rem;
+	}
+	.text-xl-30 {
+		font-size: 3rem;
+	}
+	.text-xl-35 {
+		font-size: 3.5rem;
+	}
+	.text-xl-40 {
+		font-size: 4rem;
+	}
+	.text-xl-45 {
+		font-size: 4.5rem;
+	}
+	.text-xl-50 {
+		font-size: 5rem;
+	}
+	.text-xl-55 {
+		font-size: 5.5rem;
+	}
+	.text-xl-60 {
+		font-size: 6rem;
+	}
+	.text-xl-65 {
+		font-size: 6.5rem;
+	}
+	.text-xl-70 {
+		font-size: 7rem;
+	}
+}

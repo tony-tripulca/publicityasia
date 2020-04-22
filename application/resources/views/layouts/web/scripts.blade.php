@@ -1,5 +1,0 @@
-@section('main-scripts')
-<script type="text/javascript">
-	var preloader={status:!1,percent:10,loader:null,element:null,loop:function(interval){setTimeout(()=>{this.percent<=100?this.status?this.loop(50):this.loop(500):($(this.loader).fadeOut("slow"),$(window).scrollTop(0)),$(this.element).css({background:`linear-gradient(to right, red, red 10%, red ${this.percent+=2}%, white ${this.percent+=5}%, white 100%)`,"-webkit-background-clip":"text","background-clip":"text","-webkit-text-fill-color":"transparent","-moz-text-fill-color":"transparent"})},interval)}};$(()=>{$(".hamburger").on("click",(function(event){$(".navbar-collapse").hasClass("show")?$(this).removeClass("is-active"):$(this).addClass("is-active")})),preloader.loader=$(".loader"),preloader.element=$(".holder .lead-2"),preloader.loop(500)}),$(window).on("load",(function(){preloader.status=!0}));
-</script>
-@endsection
