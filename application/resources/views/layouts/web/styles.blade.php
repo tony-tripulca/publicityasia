@@ -1,5 +1,0 @@
-@section('main-styles')
-<style>
-	body,html{background-color:#000}.loader{position:fixed;z-index:50;width:100%;height:100%;background-color:#252525}.holder{width:100%;height:100%;padding:0}.holder .lead-1{color:#fff}.holder .lead-2{width:90px;margin-left:-4px;background:linear-gradient(to right,red,red 2%,red 2%,#fff 2%,#fff 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent}.navbar{position:fixed;top:0;left:0;z-index:10;width:100%;padding:10px 0}.navbar #brand{margin-left:20px;width:120px}.navbar .nav-link{margin:0;padding:0}.navbar .nav-link img{width:20px}.navbar .navbar-nav{margin-right:20px}.navbar #navbar-menu .nav-item,.navbar #navbar-menu .nav-link,.navbar #navbar-menu .navbar-nav{display:inline-block;margin-left:5px}@media (min-width:576px){.holder .lead-2{width:150px;margin-left:-10px}}@media (min-width:992px){.holder .lead-2{width:230px;margin-left:-15px}.navbar #brand{margin-left:50px;width:190px}.navbar .navbar-nav{margin-right:42px}.navbar .nav-link img{width:32px}}
-</style>
-@endsection

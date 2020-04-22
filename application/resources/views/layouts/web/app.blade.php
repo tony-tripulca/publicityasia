@@ -34,12 +34,20 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('icons/materialize-icons/iconfont/material-icons.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('icons/themify-icons/themify-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('plugins/hamburgers/dist/hamburgers.min.css') }}">
 
     @yield('plugin-styles')
 
-    @yield('utilities')
-    @yield('main-styles')
+    @if(config('app.env') == 'production')
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/utilities.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/web/preloader.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/web/main.min.css') }}">
+	@else
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/utilities.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/web/preloader.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/web/main.css') }}">
+	@endif
 
     @yield('module-styles')
 
@@ -58,8 +66,8 @@
 <body> 
     <div class="loader">
         <div class="holder d-flex align-items-center justify-content-center">
-            <p class="lead-1 couture-bold text-25 text-md-40 text-lg-60 space-05">PUBLICITY</p>
-            <p class="lead-2 couture-bold text-25 text-md-40 text-lg-60 space-05">ASIA</p>
+            <p class="lead-1 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">PUBLICITY</p>
+            <p class="lead-2 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">ASIA</p>
         </div>
     </div>
 
@@ -80,13 +88,19 @@
         @yield('content')
     </main>
 
-    <script type="text/javascript" src="{{ asset('plugins/jquery-3.4.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/popper/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
 
     @yield('plugin-scripts')
 
-    @yield('main-scripts')
+    @if(config('app.env') == 'production')
+        <script type="text/javascript" src="{{ asset('js/web/preloader.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/web/main.min.js') }}"></script>
+	@else
+        <script type="text/javascript" src="{{ asset('js/web/preloader.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/web/main.js') }}"></script>
+	@endif
 
     @yield('module-scripts')
 </body>
