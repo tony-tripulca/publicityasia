@@ -163,10 +163,10 @@ body {
 		padding: 0 50px;
 	}
 	.menu.content.active {
-		height: calc(100% - 144px);
+		height: calc(100% - (100% / 6));
 	}
 	#profile-content {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		letter-spacing: 1.5px;
 		text-align: justify;
 	}
@@ -207,7 +207,7 @@ body {
 }
 @media (min-width: 1200px) {
 	#profile-content {
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 	}
 	#services-content ul:nth-of-type(2) {
 		margin-left: 120px;

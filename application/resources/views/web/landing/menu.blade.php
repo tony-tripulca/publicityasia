@@ -34,7 +34,7 @@
     </div>
     <div id="profile-content" class="menu content bg-gray-3 ftra-heavy text-white">
         <div class="row no-gutters h-100 d-flex align-items-center">
-            <div class="col-12 offset-lg-4 col-lg-8 lead-control">
+            <div class="col-12 lead-control">
                 <p>PUBLICITYASIA is a commercial PR firm in the Philippines that specializes in entertainment and celebrity. Dynamic and creatively-driven, we bring a modern approach to building brands in a unique and exciting way by combining strategic media and social campaigns to deliver relevancy and results.</p><br>
             
                 <p>Founded in 2004, our track record and vast connections across media and entertainment allows us to activate some of the most popular campaign executions producing valuable media coverage, brand recall and effectively reaching target audiences.</p><br>
