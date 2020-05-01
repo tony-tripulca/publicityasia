@@ -14,7 +14,8 @@ body {
 	list-style: none;
 }
 
-.menu-button {
+.menu-button,
+#services-dummy {
 	height: calc((100% - 44px) / 6);
 }
 
@@ -24,14 +25,14 @@ body {
 
 .menu-title::after {
 	position: absolute;
-	right: 20px;
-	content: "\02013";
+	right: 18px;
+	content: "+";
 	color: white;
 }
 
 .menu-title.active::after {
-	right: 18px;
-	content: "+";
+	right: 20px;
+	content: "\02013";
 	color: white;
 }
 
@@ -42,6 +43,18 @@ body {
 
 .profile.menu-content {
 	font-size: 1.2rem;
+}
+
+#services-dummy {
+	position: fixed;
+	top: 44px;
+	left: 0;
+	display: none;
+	width: 100%;
+}
+
+#services-dummy h1 {
+	padding: 0px 20px;
 }
 
 .services.menu-content {

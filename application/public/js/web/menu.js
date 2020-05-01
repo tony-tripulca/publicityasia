@@ -1,12 +1,12 @@
 // Globals
 var menu = {
 		el: [],
-		offset: [],
-		height: [],
 	},
 	button = {
 		el: null,
 		label: null,
+		offset: [],
+		height: [],
 	},
 	content = {
 		el: [],
@@ -22,6 +22,25 @@ $(() => {
 
 		toggleMenu(index);
 		setMenuPosition();
+
+		setTimeout(function () {
+			getCurrentButtonOffset();
+			moveScrollToMenu(index);
+		}, 200);
+	});
+
+	$(window).on("scroll", function () {
+		getCurrentButtonOffset();
+		getCurrentContentHeight();
+		if (
+			$(window).scrollTop() >= button.offset[1] &&
+			$(window).scrollTop() <= (button.offset[2] - content.height[2]) - button.height[2] &&
+			$(button.el[1]).hasClass("active")
+		) {
+			$("#services-dummy").css("display", "flex");
+		} else {
+			$("#services-dummy").css("display", "none");
+		}
 	});
 });
 
@@ -33,8 +52,9 @@ function initMenu() {
 	button.label = $(".menu-title");
 	content.el = $(".menu-content");
 
-	closeAllMenuContent();
+	closeAllMenuContent(-1);
 	setMenuPosition();
+	getButtonHeight();
 }
 
 function toggleMenu(index) {
@@ -43,9 +63,9 @@ function toggleMenu(index) {
 	$(content.el[index]).toggleClass("active");
 
 	if ($(button.el[index]).hasClass("active")) {
-		$(content.el[index]).slideDown();
+		$(content.el[index]).stop(true, false).slideDown();
 	} else {
-		$(content.el[index]).slideUp();
+		$(content.el[index]).stop(true, false).slideUp();
 	}
 }
 
@@ -65,14 +85,34 @@ function setMenuPosition() {
 	}
 }
 
-function closeAllMenuContent() {
+function closeAllMenuContent(index) {
 	$.each(content.el, function (i, value) {
-		$(value).slideUp();
+		if (i != index) {
+			$(value).slideUp();
+		}
 	});
 }
 
-function moveToSelectedMenu(index) {
-	
+function getCurrentButtonOffset() {
+	$.each(button.el, function (i, value) {
+		button.offset[i] = $(button.el[i]).offset().top - 44;
+	});
+}
+
+function getButtonHeight() {
+	$.each(button.el, function (i, value) {
+		button.height[i] = $(button.el[i]).height();
+	});
+}
+
+function getCurrentContentHeight() {
+	$.each(content.el, function (i, value) {
+		content.height[i] = $(content.el[i]).height();
+	});
+}
+
+function moveScrollToMenu(index) {
+	$("html, body").animate({ scrollTop: button.offset[index] });
 }
 
 function getCurrentMedia() {

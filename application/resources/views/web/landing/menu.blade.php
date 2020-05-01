@@ -42,6 +42,9 @@
 		<div id="services" class="services menu-button bg-gray-2 d-flex align-items-center">
 			<h1 class="menu-title ftra-medium text-red">SERVICES</h1>
 		</div>
+		<div id="services-dummy" class="bg-gray-2 align-items-center">
+			<h1 class="ftra-medium text-red">SERVICES</h1>
+		</div>
 		<div class="services menu-content bg-gray-2 ftra-heavy text-white">
 			<div class="row no-gutters h-100">
 				<div class="image-holder d-flex align-items-end">
@@ -96,7 +99,7 @@
 			<p>Cupidatat in voluptate fugiat ipsum. Ut nulla sint ex tempor Lorem exercitation commodo nulla voluptate in adipisicing qui officia. Id ea incididunt occaecat est sunt tempor magna qui labore. Nostrud eiusmod duis nisi amet. Eiusmod laborum id laborum ea. Proident officia incididunt occaecat culpa. Enim voluptate tempor sit do occaecat pariatur Lorem adipisicing.</p>
 			<p>Excepteur Lorem consectetur tempor est. Lorem incididunt ut ut exercitation reprehenderit est nostrud qui. Consequat reprehenderit qui ex duis sunt ut incididunt sit Lorem non aliqua in occaecat. Irure cupidatat sit laborum irure proident velit eu tempor non ea ex in aliquip sit. Voluptate cillum exercitation nisi laboris est voluptate consequat dolor nostrud cillum in. Proident deserunt nisi nulla ea ut laborum nostrud ut voluptate et ea consectetur velit officia. Reprehenderit et ullamco nostrud ut.</p>
 		</div>
-		<div id="contact" class="contact menu-button bg-gray-5 d-flex align-items-center">
+		<div id="contact" class="contact menu-button bg-gray-6 d-flex align-items-center">
 			<h1 class="menu-title ftra-medium text-white">CONTACT</h1>
 		</div>
 		<div class="contact menu-content bg-nero ftra-heavy text-white">
