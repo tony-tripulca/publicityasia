@@ -15,15 +15,63 @@ body {
 }
 
 .menu-button {
-	height: calc(100% / 6);
+	height: calc((100% - 44px) / 6);
+}
+
+.menu-title {
+	padding: 0px 20px;
+}
+
+.menu-title::after {
+	position: absolute;
+	right: 20px;
+	content: "\02013";
+	color: white;
+}
+
+.menu-title.active::after {
+	right: 18px;
+	content: "+";
+	color: white;
 }
 
 .menu-content {
 	height: calc((100% - (100% / 6)) - 44px);
+	padding: 20px 20px;
+}
+
+.profile.menu-content {
+	font-size: 1.2rem;
 }
 
 .services.menu-content {
-	height: calc((((100% - (100% / 6)) - 44px) * 2) - (100% / 6));
+	height: calc(200% - ((100% / 6) *2));
+	padding: 0;
+}
+
+.services.menu-content ul,
+.services.menu-content ul li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+.services.menu-content .image-holder {
+	width: 100%;
+	height: 50%;
+	background-image: url("../../images/services_m.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.services.page-down-button {
+	margin: 60px auto;
+	border: none;
+	background-color: transparent;
+	font-size: 2rem;
 }
 
 /**

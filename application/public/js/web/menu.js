@@ -1,13 +1,12 @@
 // Globals
-var 
-	menu = {
+var menu = {
 		el: [],
 		offset: [],
 		height: [],
 	},
 	button = {
 		el: null,
-		label: null
+		label: null,
 	},
 	content = {
 		el: [],
@@ -21,20 +20,59 @@ $(() => {
 	$(".menu-button").on("click", function () {
 		var index = $(".menu-button").index(this);
 
-		$(this).toggleClass('active');
-
-		if($(this).hasClass('active')) {
-			$(content.el[index]).slideUp();
-		} else {
-			$(content.el[index]).slideDown();
-		}
+		toggleMenu(index);
+		setMenuPosition();
 	});
 });
 
 $(window).on("load", function () {});
 
 function initMenu() {
-	content.el = $("div[class*=menu-content]");
+	menu.el = $(".menu");
+	button.el = $(".menu-button");
+	button.label = $(".menu-title");
+	content.el = $(".menu-content");
+
+	closeAllMenuContent();
+	setMenuPosition();
+}
+
+function toggleMenu(index) {
+	$(button.el[index]).toggleClass("active");
+	$(button.label[index]).toggleClass("active");
+	$(content.el[index]).toggleClass("active");
+
+	if ($(button.el[index]).hasClass("active")) {
+		$(content.el[index]).slideDown();
+	} else {
+		$(content.el[index]).slideUp();
+	}
+}
+
+function setMenuPosition() {
+	var flag = 0;
+
+	$.each(button.el, function (i, value) {
+		if ($(value).hasClass("active")) {
+			flag++;
+		}
+	});
+
+	if (flag) {
+		$(menu.el).css("position", "absolute");
+	} else {
+		$(menu.el).css("position", "fixed");
+	}
+}
+
+function closeAllMenuContent() {
+	$.each(content.el, function (i, value) {
+		$(value).slideUp();
+	});
+}
+
+function moveToSelectedMenu(index) {
+	
 }
 
 function getCurrentMedia() {
