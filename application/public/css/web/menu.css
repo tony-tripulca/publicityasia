@@ -42,22 +42,13 @@ body {
 }
 
 .profile.menu-content {
-	font-size: 1.2rem;
-}
-
-#services-dummy {
-	display: none;
-	width: 100%;
-}
-
-#services-dummy h1 {
-	padding: 0px 20px;
+	font-size: 0.9rem;
 }
 
 .services.menu-content {
-	height: calc(200% - ((100% / 6) *2));
+	height: calc(200% - ((100% / 6) * 2));
 	padding: 0;
-	font-size: 1.4rem;
+	font-size: 0.9rem;
 }
 
 .services.menu-content #services-list {
@@ -86,15 +77,35 @@ body {
 	background-repeat: no-repeat;
 }
 
+.spacer {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 24rem 0 0 0;
+}
+
 .services.page-down-button {
-	margin: 0 auto 80px auto;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	border: none;
 	background-color: transparent;
 	font-size: 2rem;
 }
 
+#services-dummy {
+	margin-top: 1rem;
+	display: none;
+	width: 100%;
+}
+
+#services-dummy h1 {
+	margin: 0;
+	padding: 0 20px;
+}
+
 .network.menu-content #article-carousel {
-	margin-top: 120px;
+	margin-top: 50px;
 }
 
 .network.menu-content .carousel-control-prev {
@@ -106,19 +117,19 @@ body {
 }
 
 .experiential.menu-content {
-	font-size: 1.18rem;
+	font-size: 0.9rem;
 }
 
 .experiential.menu-content .row div:nth-child(2) img {
-	width: 270px;
+	width: 220px;
 }
 
 .experiential.menu-content .row div:nth-child(3) img {
-	width: 320px;
+	width: 260px;
 }
 
 .experiential.menu-content .row div:nth-child(4) img {
-	width: 160px;
+	width: 110px;
 }
 
 .experiential.menu-content .row div:nth-child(4) {
@@ -130,7 +141,7 @@ body {
 	background-size: cover;
 	background-position: right center;
 	background-repeat: no-repeat;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 /**
@@ -152,4 +163,121 @@ body {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+}
+
+/**
+ * Touch devices
+ */
+@media (pointer: none), (pointer: coarse) and (min-width: 359px) {
+	.profile.menu-content {
+		font-size: 1.03rem;
+	}
+
+	.services.menu-content {
+		font-size: 1.05rem;
+	}
+
+	.services.menu-content .spacer {
+		padding: 26rem 0 0 0;
+	}
+
+	.experiential.menu-content {
+		font-size: 1.08rem;
+	}
+
+	.connect.menu-content {
+		font-size: 1.2rem;
+	}
+}
+
+@media (pointer: none), (pointer: coarse) and (min-width: 374px) {
+	.profile.menu-content {
+		font-size: 1.08rem;
+	}
+
+	.services.menu-content {
+		font-size: 1.1rem;
+	}
+
+	.services.menu-content .spacer {
+		padding: 28rem 0 0 0;
+	}
+
+	.experiential.menu-content {
+		font-size: 1.15rem;
+	}
+
+	.experiential.menu-content .row div:nth-child(2) img {
+		width: 260px;
+	}
+
+	.experiential.menu-content .row div:nth-child(3) img {
+		width: 300px;
+	}
+
+	.experiential.menu-content .row div:nth-child(4) img {
+		width: 150px;
+	}
+}
+
+@media (pointer: none), (pointer: coarse) and (min-width: 410px) {
+	.profile.menu-content {
+		font-size: 1.21rem;
+	}
+
+	.services.menu-content {
+		font-size: 1.21rem;
+	}
+
+	.services.menu-content .spacer {
+		padding: 31rem 0 0 0;
+	}
+
+	.experiential.menu-content {
+		font-size: 1.25rem;
+	}
+
+	.connect.menu-content {
+		font-size: 1.25rem;
+	}
+}
+
+/**
+ * Specific devices
+ */
+
+/* iPhone X */
+@media (pointer: none),
+	(pointer: coarse) and (min-width: 374px) and (min-height: 810px) {
+		.profile.menu-content {
+			font-size: 1.2rem;
+		}
+
+		.services.menu-content {
+			font-size: 1.3rem;
+		}
+
+		.services.menu-content .spacer {
+			padding: 34rem 0 0 0;
+		}
+
+		.network.menu-content #article-carousel {
+			margin-top: 120px;
+		}
+
+		.experiential.menu-content {
+			font-size: 1.25rem;
+		}
+
+		.connect.menu-content {
+			font-size: 1.25rem;
+		}
+}
+
+/* Pixel 2 */
+@media (pointer: none),
+	(pointer: coarse) and (min-width: 410px) and (min-height: 729px) {
+		.profile.menu-content {
+			font-size: 1.2rem;
+		}
 }

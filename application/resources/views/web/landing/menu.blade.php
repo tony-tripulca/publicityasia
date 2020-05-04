@@ -43,7 +43,8 @@
 			<h1 class="menu-title ftra-medium text-red">SERVICES</h1>
 		</div>
 		<div class="services menu-content bg-gray-2 ftra-heavy text-white">
-			<div class="image-holder d-flex align-items-end">
+			<div class="image-holder">
+				<div class="spacer"></div>
 				<button class="services page-down-button text-white"><span class="ti-angle-down"></span></button>
 				<div id="services-dummy" class="bg-gray-2 align-items-center">
 				<h1 class="ftra-medium text-red">SERVICES</h1>
