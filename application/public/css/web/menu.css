@@ -73,7 +73,7 @@ body {
 	height: 50%;
 	background-image: url("../../images/services_m.jpg");
 	background-size: cover;
-	background-position: center center;
+	background-position: center top;
 	background-repeat: no-repeat;
 }
 
@@ -159,6 +159,87 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+	.menu-title {
+		padding: 0px 50px;
+	}
+	
+	.menu-title::after {
+		position: absolute;
+		right: 48px;
+		content: "+";
+		color: white;
+	}
+	
+	.menu-title.active::after {
+		right: 50px;
+		content: "\02013";
+		color: white;
+	}
+	
+	.menu-content {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.profile.menu-content {
+		padding-top: 40px;
+		font-size: 1.7rem;
+	}
+
+	.services.menu-content {
+		height: calc((100% - (100% / 6)) - 44px);
+		padding: 50px 50px;
+		font-size: 1.7rem;
+	}
+	
+	.services.menu-content #services-list {
+		padding-top: 60px;
+	}
+
+	.services.menu-content {
+		background-image: url("../../images/services.jpg");
+		background-size: cover;
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+
+	.network.menu-content #article-carousel {
+		margin-top: 100px;
+		padding: 0 0;
+	}
+
+	.network.menu-content .carousel-control-prev {
+		left: -20px;
+	}
+	
+	.network.menu-content .carousel-control-next {
+		right: -20px;
+	}
+
+	.experiential.menu-content {
+		font-size: 1.9rem;
+	}
+
+	.experiential.menu-content .row div:nth-child(2) img {
+		width: 300px;
+	}
+
+	.experiential.menu-content .row div:nth-child(3) img {
+		width: 360px;
+	}
+
+	.experiential.menu-content .row div:nth-child(4) img {
+		width: 150px;
+		padding-bottom: 5px;
+	}
+
+	.connect.menu-content {
+		background-image: url("../../images/connect.jpg");
+		background-size: cover;
+		background-position: right top;
+		background-repeat: no-repeat;
+		font-size: 1.8rem;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -242,42 +323,93 @@ body {
 	}
 }
 
-/**
- * Specific devices
- */
-
-/* iPhone X */
 @media (pointer: none),
 	(pointer: coarse) and (min-width: 374px) and (min-height: 810px) {
-		.profile.menu-content {
-			font-size: 1.2rem;
-		}
+	.profile.menu-content {
+		font-size: 1.2rem;
+	}
 
-		.services.menu-content {
-			font-size: 1.3rem;
-		}
+	.services.menu-content {
+		font-size: 1.3rem;
+	}
 
-		.services.menu-content .spacer {
-			padding: 34rem 0 0 0;
-		}
+	.services.menu-content .spacer {
+		padding: 34rem 0 0 0;
+	}
 
-		.network.menu-content #article-carousel {
-			margin-top: 120px;
-		}
+	.network.menu-content #article-carousel {
+		margin-top: 120px;
+	}
 
-		.experiential.menu-content {
-			font-size: 1.25rem;
-		}
+	.experiential.menu-content {
+		font-size: 1.25rem;
+	}
 
-		.connect.menu-content {
-			font-size: 1.25rem;
-		}
+	.connect.menu-content {
+		font-size: 1.25rem;
+	}
 }
 
-/* Pixel 2 */
 @media (pointer: none),
 	(pointer: coarse) and (min-width: 410px) and (min-height: 729px) {
-		.profile.menu-content {
-			font-size: 1.2rem;
-		}
+	.profile.menu-content {
+		font-size: 1.2rem;
+	}
+}
+
+@media (pointer: none),
+	(pointer: coarse) and (min-width: 768px) and (min-height: 1024px) {
+	.profile.menu-content {
+		padding-top: 70px;
+		font-size: 1.9rem;
+	}
+
+	.services.menu-content {
+		font-size: 1.6rem;
+	}
+
+	.services.menu-content .spacer {
+		padding: 47rem 0 0 0;
+	}
+
+	.services.menu-content .image-holder {
+		background-image: url("../../images/services_t.jpg");
+	}
+
+	.services.menu-content #services-list {
+		padding-top: 120px;
+	}
+
+	.network.menu-content #article-carousel {
+		margin-top: 80px;
+		padding: 0 60px;
+	}
+
+	.network.menu-content .carousel-control-prev {
+		left: -10px;
+	}
+	
+	.network.menu-content .carousel-control-next {
+		right: -10px;
+	}
+
+	.experiential.menu-content {
+		font-size: 1.8rem;
+	}
+
+	.experiential.menu-content .row div:nth-child(2) img {
+		width: 460px;
+	}
+
+	.experiential.menu-content .row div:nth-child(3) img {
+		width: 500px;
+	}
+
+	.experiential.menu-content .row div:nth-child(4) img {
+		width: 350px;
+	}
+
+	.connect.menu-content {
+		font-size: 1.8rem;
+	}
 }
