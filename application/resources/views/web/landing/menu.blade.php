@@ -42,14 +42,14 @@
 		<div id="services" class="services menu-button bg-gray-2 d-flex align-items-center">
 			<h1 class="menu-title ftra-medium text-red">SERVICES</h1>
 		</div>
-		<div id="services-dummy" class="bg-gray-2 align-items-center">
-			<h1 class="ftra-medium text-red">SERVICES</h1>
-		</div>
 		<div class="services menu-content bg-gray-2 ftra-heavy text-white">
-			<div class="row no-gutters h-100">
-				<div class="image-holder d-flex align-items-end">
-					<button class="services page-down-button text-white"><span class="ti-angle-down"></span></button>
-				</div>
+			<div class="image-holder d-flex align-items-end">
+				<button class="services page-down-button text-white"><span class="ti-angle-down"></span></button>
+				<div id="services-dummy" class="bg-gray-2 align-items-center">
+				<h1 class="ftra-medium text-red">SERVICES</h1>
+			</div>
+			</div>
+			<div id="services-list" class="row no-gutters d-flex align-items-start align-items-lg-center">
 				<div class="col-12 col-lg-4">
 					<ul class="list-group">
 						<li class="list-group-item">Media Relations</li>
@@ -82,29 +82,56 @@
 			<h1 class="menu-title ftra-medium text-white">NETWORK</h1>
 		</div>
 		<div class="network menu-content bg-nero ftra-heavy text-white">
-			<p>Cupidatat in voluptate fugiat ipsum. Ut nulla sint ex tempor Lorem exercitation commodo nulla voluptate in adipisicing qui officia. Id ea incididunt occaecat est sunt tempor magna qui labore. Nostrud eiusmod duis nisi amet. Eiusmod laborum id laborum ea. Proident officia incididunt occaecat culpa. Enim voluptate tempor sit do occaecat pariatur Lorem adipisicing.</p>
-			<p>Excepteur Lorem consectetur tempor est. Lorem incididunt ut ut exercitation reprehenderit est nostrud qui. Consequat reprehenderit qui ex duis sunt ut incididunt sit Lorem non aliqua in occaecat. Irure cupidatat sit laborum irure proident velit eu tempor non ea ex in aliquip sit. Voluptate cillum exercitation nisi laboris est voluptate consequat dolor nostrud cillum in. Proident deserunt nisi nulla ea ut laborum nostrud ut voluptate et ea consectetur velit officia. Reprehenderit et ullamco nostrud ut.</p>
+			<div class="row no-gutters h-100 d-flex align-items-start">
+				<div class="col-12 offset-lg-4 col-lg-4 text-center">
+					<div id="article-carousel" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner"></div>
+						<a class="carousel-control-prev" href="#article-carousel" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#article-carousel" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div id="originals" class="originals menu-button bg-gray-4 d-flex align-items-center">
 			<h1 class="menu-title ftra-medium text-red">ORIGINALS</h1>
 		</div>
 		<div class="originals menu-content bg-nero ftra-heavy text-white">
 			<p>Cupidatat in voluptate fugiat ipsum. Ut nulla sint ex tempor Lorem exercitation commodo nulla voluptate in adipisicing qui officia. Id ea incididunt occaecat est sunt tempor magna qui labore. Nostrud eiusmod duis nisi amet. Eiusmod laborum id laborum ea. Proident officia incididunt occaecat culpa. Enim voluptate tempor sit do occaecat pariatur Lorem adipisicing.</p>
-			<p>Excepteur Lorem consectetur tempor est. Lorem incididunt ut ut exercitation reprehenderit est nostrud qui. Consequat reprehenderit qui ex duis sunt ut incididunt sit Lorem non aliqua in occaecat. Irure cupidatat sit laborum irure proident velit eu tempor non ea ex in aliquip sit. Voluptate cillum exercitation nisi laboris est voluptate consequat dolor nostrud cillum in. Proident deserunt nisi nulla ea ut laborum nostrud ut voluptate et ea consectetur velit officia. Reprehenderit et ullamco nostrud ut.</p>
 		</div>
 		<div id="experiential" class="experiential menu-button bg-gray-5 d-flex align-items-center">
 			<h1 class="menu-title ftra-medium text-white">EXPERIENTIAL</h1>
 		</div>
 		<div class="experiential menu-content bg-nero ftra-heavy text-white">
-			<p>Cupidatat in voluptate fugiat ipsum. Ut nulla sint ex tempor Lorem exercitation commodo nulla voluptate in adipisicing qui officia. Id ea incididunt occaecat est sunt tempor magna qui labore. Nostrud eiusmod duis nisi amet. Eiusmod laborum id laborum ea. Proident officia incididunt occaecat culpa. Enim voluptate tempor sit do occaecat pariatur Lorem adipisicing.</p>
-			<p>Excepteur Lorem consectetur tempor est. Lorem incididunt ut ut exercitation reprehenderit est nostrud qui. Consequat reprehenderit qui ex duis sunt ut incididunt sit Lorem non aliqua in occaecat. Irure cupidatat sit laborum irure proident velit eu tempor non ea ex in aliquip sit. Voluptate cillum exercitation nisi laboris est voluptate consequat dolor nostrud cillum in. Proident deserunt nisi nulla ea ut laborum nostrud ut voluptate et ea consectetur velit officia. Reprehenderit et ullamco nostrud ut.</p>
+			<div class="row no-gutters h-100 d-flex align-items-start">
+				<div class="col-12">
+					<p>We enable clients to amplify their brand and value through transformative events and co&#8209;branding partnerships that sit at the heart of pop-culture. Through original concepts and customized strategies, we weave branded entertainment and produce relevant and headline-grabbing fan experiences that hits the brand’s target audience. By creating meaningful and lasting impressions, we are able to convert fans into avid loyalists.</p>
+				</div>
+				<div class="col-12 col-lg-4 text-center text-lg-left">
+					<img src="{{ asset('images/leadingseries.png') }}">
+				</div>
+				<div class="col-12 col-lg-6 text-center">
+					<img src="{{ asset('images/womanforward.png') }}">
+				</div>
+				<div class="col-12 col-lg-2 text-center text-lg-right">
+					<img src="{{ asset('images/idolfest.png') }}">
+				</div>
+			</div>
 		</div>
-		<div id="contact" class="contact menu-button bg-gray-6 d-flex align-items-center">
-			<h1 class="menu-title ftra-medium text-white">CONTACT</h1>
+		<div id="connect" class="connect menu-button bg-gray-6 d-flex align-items-center">
+			<h1 class="menu-title ftra-medium text-white">CONNECT</h1>
 		</div>
-		<div class="contact menu-content bg-nero ftra-heavy text-white">
-			<p>Cupidatat in voluptate fugiat ipsum. Ut nulla sint ex tempor Lorem exercitation commodo nulla voluptate in adipisicing qui officia. Id ea incididunt occaecat est sunt tempor magna qui labore. Nostrud eiusmod duis nisi amet. Eiusmod laborum id laborum ea. Proident officia incididunt occaecat culpa. Enim voluptate tempor sit do occaecat pariatur Lorem adipisicing.</p>
-			<p>Excepteur Lorem consectetur tempor est. Lorem incididunt ut ut exercitation reprehenderit est nostrud qui. Consequat reprehenderit qui ex duis sunt ut incididunt sit Lorem non aliqua in occaecat. Irure cupidatat sit laborum irure proident velit eu tempor non ea ex in aliquip sit. Voluptate cillum exercitation nisi laboris est voluptate consequat dolor nostrud cillum in. Proident deserunt nisi nulla ea ut laborum nostrud ut voluptate et ea consectetur velit officia. Reprehenderit et ullamco nostrud ut.</p>
+		<div class="connect menu-content bg-nero ftra-heavy text-white">
+			<div class="row no-gutters h-100 d-flex align-items-end">
+				<div class="col-12">
+					<p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>

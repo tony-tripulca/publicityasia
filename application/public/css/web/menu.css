@@ -46,9 +46,6 @@ body {
 }
 
 #services-dummy {
-	position: fixed;
-	top: 44px;
-	left: 0;
 	display: none;
 	width: 100%;
 }
@@ -60,6 +57,11 @@ body {
 .services.menu-content {
 	height: calc(200% - ((100% / 6) *2));
 	padding: 0;
+	font-size: 1.4rem;
+}
+
+.services.menu-content #services-list {
+	padding-top: 60px;
 }
 
 .services.menu-content ul,
@@ -69,6 +71,10 @@ body {
 	border: none;
 	border-radius: 0;
 	background-color: transparent;
+}
+
+.services.menu-content ul {
+	padding: 0 20px;
 }
 
 .services.menu-content .image-holder {
@@ -81,10 +87,50 @@ body {
 }
 
 .services.page-down-button {
-	margin: 60px auto;
+	margin: 0 auto 80px auto;
 	border: none;
 	background-color: transparent;
 	font-size: 2rem;
+}
+
+.network.menu-content #article-carousel {
+	margin-top: 120px;
+}
+
+.network.menu-content .carousel-control-prev {
+	left: -20px;
+}
+
+.network.menu-content .carousel-control-next {
+	right: -20px;
+}
+
+.experiential.menu-content {
+	font-size: 1.18rem;
+}
+
+.experiential.menu-content .row div:nth-child(2) img {
+	width: 270px;
+}
+
+.experiential.menu-content .row div:nth-child(3) img {
+	width: 320px;
+}
+
+.experiential.menu-content .row div:nth-child(4) img {
+	width: 160px;
+}
+
+.experiential.menu-content .row div:nth-child(4) {
+	margin-bottom: 20px;
+}
+
+.connect.menu-content {
+	background-image: url("../../images/connect_m.jpg");
+	background-size: cover;
+	background-position: right center;
+	background-repeat: no-repeat;
+	font-size: 1.2rem;
 }
 
 /**
