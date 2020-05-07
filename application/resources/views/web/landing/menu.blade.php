@@ -136,4 +136,7 @@
 		</div>
 	</div>
 </section>
+<section>
+	<div class="quick-cover"></div>
+</section>
 @endsection

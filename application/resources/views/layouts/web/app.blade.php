@@ -64,12 +64,14 @@
 </head>
 
 <body> 
+    @if($main_page)
     <div class="loader">
         <div class="holder d-flex align-items-center justify-content-center">
             <p class="lead-1 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">PUBLICITY</p>
             <p class="lead-2 couture-bold text-25 text-md-40 text-lg-60 space-07 space-lg-05">ASIA</p>
         </div>
     </div>
+    @endif
 
     @if($has_video)
         <div class="video-holder">
@@ -88,6 +90,7 @@
         @yield('content')
     </main>
 
+    <script type="text/javascript">function url() { return "{{ url('/') }}"; }</script>
     <script type="text/javascript" src="{{ asset('js/jquery-3.4.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/popper/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
