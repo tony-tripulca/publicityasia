@@ -82,7 +82,7 @@
 
 .onepage-pagination li a.active::before {
 	z-index: -1;
-	left: 9.5px;
+	left: 9px;
 	margin-top: 2px;
 	border: none;
 	color: #fff;

@@ -130,7 +130,7 @@
 		<div class="connect menu-content bg-nero ftra-heavy text-white">
 			<div class="row no-gutters h-100 d-flex align-items-end">
 				<div class="col-12">
-					<p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
+					<p>We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
 				</div>
 			</div>
 		</div>

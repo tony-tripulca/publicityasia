@@ -53,11 +53,11 @@ $(() => {
 });
 
 $(window).on("load", function () {
-	$('.quick-cover').fadeTo(500, 0);
+	// $('.quick-cover').fadeTo(500, 0);
 
 	setTimeout(function() {
 		$('.quick-cover').hide();
-	}, 500);
+	}, 1000);
 });
 
 function initMenu() {
