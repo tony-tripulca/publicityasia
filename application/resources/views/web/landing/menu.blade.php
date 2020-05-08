@@ -43,14 +43,13 @@
 			<h1 class="menu-title ftra-medium text-red">SERVICES</h1>
 		</div>
 		<div class="services menu-content bg-gray-2 ftra-heavy text-white">
-			<div class="image-holder d-lg-none">
-				<div class="spacer"></div>
+			<div class="image-holder d-lg-none d-flex align-items-end">
 				<button class="services page-down-button text-white"><span class="ti-angle-down"></span></button>
-				<div id="services-dummy" class="bg-gray-2 align-items-center">
-					<h1 class="ftra-medium text-red">SERVICES</h1>
-				</div>
 			</div>
 			<div id="services-list" class="row no-gutters d-flex align-items-start align-items-lg-center">
+				<div id="services-dummy" class="d-lg-none bg-gray-2 align-items-center">
+					<h1 class="ftra-medium text-red">SERVICES</h1>
+				</div>
 				<div class="col-12 col-lg-5">
 					<ul class="list-group">
 						<li class="list-group-item">Media Relations</li>
@@ -130,10 +129,13 @@
 		<div class="connect menu-content bg-nero ftra-heavy text-white">
 			<div class="row no-gutters h-100 d-flex align-items-end">
 				<div class="col-12">
-					<p class="text-justified">We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
+					<p>We look forward to helping you achieve your brand goals and promo requirements. Feel free to reach us via email <a href="mailto:pr@publicityasia.com" class="text-red">pr@publicityasia.com</a> and we will respond back as soon as we can.</p>
 				</div>
 			</div>
 		</div>
 	</div>
+</section>
+<section>
+	<div class="quick-cover"></div>
 </section>
 @endsection

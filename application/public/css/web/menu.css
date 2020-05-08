@@ -46,13 +46,9 @@ body {
 }
 
 .services.menu-content {
-	height: calc(200% - ((100% / 6) * 2));
+	height: calc(200% - (((100% / 6) * 2) - 44px));
 	padding: 0;
 	font-size: 0.9rem;
-}
-
-.services.menu-content #services-list {
-	padding-top: 60px;
 }
 
 .services.menu-content ul,
@@ -70,18 +66,11 @@ body {
 
 .services.menu-content .image-holder {
 	width: 100%;
-	height: 50%;
+	height: 46%;
 	background-image: url("../../images/services_m.jpg");
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
-}
-
-.spacer {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 24rem 0 0 0;
 }
 
 .services.page-down-button {
@@ -94,14 +83,19 @@ body {
 }
 
 #services-dummy {
-	margin-top: 1rem;
 	display: none;
 	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #services-dummy h1 {
 	margin: 0;
 	padding: 0 20px;
+}
+
+.services.menu-content #services-list {
+	height: 48%;
 }
 
 .network.menu-content #article-carousel {
@@ -144,6 +138,14 @@ body {
 	font-size: 1rem;
 }
 
+.quick-cover {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+}
+
 /**
  * Extra small devices (portrait phones, less than 576px)
  * No media query for 'xs' since this is the default in Bootstrap
@@ -179,21 +181,18 @@ body {
 	.menu-content {
 		padding-left: 50px;
 		padding-right: 50px;
+		text-align: justify;
 	}
 
 	.profile.menu-content {
 		padding-top: 40px;
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	}
 
 	.services.menu-content {
 		height: calc((100% - (100% / 6)) - 44px);
 		padding: 50px 50px;
-		font-size: 1.7rem;
-	}
-	
-	.services.menu-content #services-list {
-		padding-top: 60px;
+		font-size: 1.5rem;
 	}
 
 	.services.menu-content {
@@ -201,6 +200,10 @@ body {
 		background-size: cover;
 		background-position: right top;
 		background-repeat: no-repeat;
+	}
+
+	.services.menu-content #services-list {
+		height: 100%;
 	}
 
 	.network.menu-content #article-carousel {
@@ -217,7 +220,7 @@ body {
 	}
 
 	.experiential.menu-content {
-		font-size: 1.9rem;
+		font-size: 1.7rem;
 	}
 
 	.experiential.menu-content .row div:nth-child(2) img {
@@ -238,7 +241,7 @@ body {
 		background-size: cover;
 		background-position: right top;
 		background-repeat: no-repeat;
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 }
 
@@ -258,10 +261,6 @@ body {
 		font-size: 1.05rem;
 	}
 
-	.services.menu-content .spacer {
-		padding: 26rem 0 0 0;
-	}
-
 	.experiential.menu-content {
 		font-size: 1.08rem;
 	}
@@ -273,19 +272,15 @@ body {
 
 @media (pointer: none), (pointer: coarse) and (min-width: 374px) {
 	.profile.menu-content {
-		font-size: 1.08rem;
+		font-size: 1rem;
 	}
 
 	.services.menu-content {
-		font-size: 1.1rem;
-	}
-
-	.services.menu-content .spacer {
-		padding: 28rem 0 0 0;
+		font-size: 1rem;
 	}
 
 	.experiential.menu-content {
-		font-size: 1.15rem;
+		font-size: 1.07rem;
 	}
 
 	.experiential.menu-content .row div:nth-child(2) img {
@@ -310,10 +305,6 @@ body {
 		font-size: 1.21rem;
 	}
 
-	.services.menu-content .spacer {
-		padding: 31rem 0 0 0;
-	}
-
 	.experiential.menu-content {
 		font-size: 1.25rem;
 	}
@@ -331,10 +322,6 @@ body {
 
 	.services.menu-content {
 		font-size: 1.3rem;
-	}
-
-	.services.menu-content .spacer {
-		padding: 34rem 0 0 0;
 	}
 
 	.network.menu-content #article-carousel {
@@ -368,16 +355,8 @@ body {
 		font-size: 1.6rem;
 	}
 
-	.services.menu-content .spacer {
-		padding: 47rem 0 0 0;
-	}
-
 	.services.menu-content .image-holder {
 		background-image: url("../../images/services_t.jpg");
-	}
-
-	.services.menu-content #services-list {
-		padding-top: 120px;
 	}
 
 	.network.menu-content #article-carousel {

@@ -1,30 +1,30 @@
 $(() => {
-    $('.tlt').textillate({
-        loop: false,
-        minDisplayTime: 1000,
-        initialDelay: 1000,
-        autoStart: true,
-        in: {
-            effect: 'fadeInUp',
-            delayScale: 1.5,
-            delay: 50,
-            sync: true,
-            shuffle: false,
-            reverse: false,
-            callback: function() {}
-        },
-        out: {
-            effect: 'fadeOut',
-            delayScale: 0.5,
-            delay: 50,
-            sync: true,
-            shuffle: false,
-            reverse: false,
-            callback: function() {}
-        },
-        callback: function() {},
-        type: 'char'
-    });
+    // $('.tlt').textillate({
+    //     loop: false,
+    //     minDisplayTime: 1000,
+    //     initialDelay: 1000,
+    //     autoStart: true,
+    //     in: {
+    //         effect: 'fadeInUp',
+    //         delayScale: 1.5,
+    //         delay: 50,
+    //         sync: true,
+    //         shuffle: false,
+    //         reverse: false,
+    //         callback: function() {}
+    //     },
+    //     out: {
+    //         effect: 'fadeOut',
+    //         delayScale: 0.5,
+    //         delay: 50,
+    //         sync: true,
+    //         shuffle: false,
+    //         reverse: false,
+    //         callback: function() {}
+    //     },
+    //     callback: function() {},
+    //     type: 'char'
+    // });
 
     $(".main").onepage_scroll({
         sectionContainer: 'section',

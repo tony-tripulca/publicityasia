@@ -65,7 +65,7 @@
 			<p class="page-hero ftra-medium text-20 text-sm-30 text-lg-35 text-xl-40 text-white">
 				<span class="tlt">NATIONAL&#8228;</span><br>
 				<span class="tlt">REGIONAL&#8228;</span><br>
-				<span class="tlt">GLOBAL</span><span class="tlt text-red">REACH&#8228;</span><br>
+				<span class="tlt">GLOBAL</span> <span class="tlt text-red">REACH&#8228;</span><br>
 			</p>
 		</div>
 	</div>

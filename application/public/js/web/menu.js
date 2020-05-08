@@ -52,7 +52,13 @@ $(() => {
 	});
 });
 
-$(window).on("load", function () {});
+$(window).on("load", function () {
+	// $('.quick-cover').fadeTo(500, 0);
+
+	setTimeout(function() {
+		$('.quick-cover').hide();
+	}, 1000);
+});
 
 function initMenu() {
 	menu.el = $(".menu");
@@ -136,72 +142,72 @@ function getCurrentMedia() {
 
 function setArticles() {
 	_articles = $(".network.menu-content .carousel-inner");
-	url = "";
+	link = "";
 
 	for (let i = 0; i < 15; i++) {
 		switch (i) {
 			case 0:
-				url =
+				link =
 					"https://www.hollywoodreporter.com/news/netflix-acquires-filipino-rom-girl-allergic-wifi-1229889";
 				break;
 			case 1:
-				url =
+				link =
 					"https://variety.com/2019/tv/asia/hbo-asia-renews-halfworlds-third-season-series-in-philippines-1203419572/";
 				break;
 			case 2:
-				url = "https://decider.com/2018/04/09/amo-netflix-review/";
+				link = "https://decider.com/2018/04/09/amo-netflix-review/";
 				break;
 			case 3:
-				url =
+				link =
 					"https://screenanarchy.com/2016/11/seclusion-trailer-in-erik-matti.html";
 				break;
 			case 4:
-				url =
+				link =
 					"https://www.economist.com/asia/2015/11/21/she-once-was-lost";
 				break;
 			case 5:
-				url = "https://www.imdb.com/news/ni62702733";
+				link = "https://www.imdb.com/news/ni62702733";
 				break;
 			case 6:
-				url =
+				link =
 					"https://tv5.espn.com/story/_/id/28258103/sibol-dota-2-team-gives-ph-another-gold-medal-esports";
 				break;
 			case 7:
-				url =
+				link =
 					"https://onenews.ph/phl-esports-bets-seen-to-lead-in-sea-games";
 				break;
 			case 8:
-				url =
+				link =
 					"https://news.abs-cbn.com/sports/12/08/19/sea-games-pinoy-mobile-legends-team-wins-first-esports-gold";
 				break;
 			case 9:
-				url =
+				link =
 					"https://www.gmanetwork.com/news/showbiz/chikaminute/704503/rocco-nacino-topbills-new-movie-write-about-love/story/";
 				break;
 			case 10:
-				url =
+				link =
 					"https://www.rappler.com/entertainment/music/244519-yeng-constantino-ikaw-ang-akin-write-about-love";
 				break;
 			case 11:
-				url = "https://sports.inquirer.net/379065/uncanny-heroes";
+				link = "https://sports.inquirer.net/379065/uncanny-heroes";
 				break;
 			case 12:
-				url =
+				link =
 					"https://www.preview.ph/beauty/5-derma-approved-ways-to-look-like-a-star-adv-con-pr";
 				break;
 			case 13:
-				url =
+				link =
 					"https://www.spin.ph/life/guide/sea-games-viewing-guide-a1374-20191119";
 				break;
 			case 14:
-				url =
+				link =
 					"https://www.esquiremag.ph/money/capital/c-estates-is-poised-to-democratize-the-real-estate-market-a1926-20190716";
 				break;
 		}
 		$(_articles).append(
 			`<div class="carousel-item ${0 == i ? "active" : ""}">
-				<a href=${url} target="_blank">
-					<img src="../../images/articles/a${i}.jpg" width="80%" alt="...">
+				<a href=${link} target="_blank">
+					<img src="${url()}/application/public/images/articles/a${i}.jpg" width="80%" alt="...">
 				</a>
 			</div>`
 		);
