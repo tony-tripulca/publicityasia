@@ -43,14 +43,13 @@
 			<h1 class="menu-title ftra-medium text-red">SERVICES</h1>
 		</div>
 		<div class="services menu-content bg-gray-2 ftra-heavy text-white">
-			<div class="image-holder d-lg-none">
-				<div class="spacer"></div>
+			<div class="image-holder d-lg-none d-flex align-items-end">
 				<button class="services page-down-button text-white"><span class="ti-angle-down"></span></button>
-				<div id="services-dummy" class="bg-gray-2 align-items-center">
-					<h1 class="ftra-medium text-red">SERVICES</h1>
-				</div>
 			</div>
 			<div id="services-list" class="row no-gutters d-flex align-items-start align-items-lg-center">
+				<div id="services-dummy" class="d-lg-none bg-gray-2 align-items-center">
+					<h1 class="ftra-medium text-red">SERVICES</h1>
+				</div>
 				<div class="col-12 col-lg-5">
 					<ul class="list-group">
 						<li class="list-group-item">Media Relations</li>
