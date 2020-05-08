@@ -53,11 +53,11 @@ $(() => {
 });
 
 $(window).on("load", function () {
-	$('.quick-cover').fadeTo(500, 0);
+	// $('.quick-cover').fadeTo(500, 0);
 
 	setTimeout(function() {
 		$('.quick-cover').hide();
-	}, 500);
+	}, 1000);
 });
 
 function initMenu() {
@@ -207,7 +207,7 @@ function setArticles() {
 		$(_articles).append(
 			`<div class="carousel-item ${0 == i ? "active" : ""}">
 				<a href=${link} target="_blank">
-					<img src="${url()}/images/articles/a${i}.jpg" width="80%" alt="...">
+					<img src="${url()}/application/public/images/articles/a${i}.jpg" width="80%" alt="...">
 				</a>
 			</div>`
 		);
