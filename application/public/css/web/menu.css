@@ -184,6 +184,14 @@ body {
 		text-align: justify;
 	}
 
+	.services.menu-content {
+		text-align: left;
+	}
+
+	.services.menu-content ul {
+		padding: 0;
+	}
+
 	.profile.menu-content {
 		padding-top: 40px;
 		font-size: 1.5rem;
@@ -191,8 +199,12 @@ body {
 
 	.services.menu-content {
 		height: calc((100% - (100% / 6)) - 44px);
-		padding: 50px 50px;
-		font-size: 1.5rem;
+		padding: 50px;
+		font-size: 1.4rem;
+	}
+
+	.services.menu-content .balancer {
+		opacity: 0;
 	}
 
 	.services.menu-content {

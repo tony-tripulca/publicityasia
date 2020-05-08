@@ -52,28 +52,28 @@
 				</div>
 				<div class="col-12 col-lg-5">
 					<ul class="list-group">
-						<li class="list-group-item">Media Relations</li>
-						<li class="list-group-item">Celebrity Acquisition</li>
-						<li class="list-group-item">Creative & Strategy</li>
-						<li class="list-group-item">Campaign Management</li>
-						<li class="list-group-item">Digital & Media Placements</li>
-						<li class="list-group-item">Design & Layout Services</li>
-						<li class="list-group-item">Copywriting & Editing</li>
-						<li class="list-group-item">Digital & Social Media</li>
-						<li class="list-group-item">Event & Activation</li>
+						<li class="list-group-item">Activation&nbsp;&amp;&nbsp;Event PR</li>
+						<li class="list-group-item">Amplification&nbsp;&amp;&nbsp;Reach</li>
+						<li class="list-group-item">Branding (Concept&nbsp;&amp;&nbsp;Design)</li>
+						<li class="list-group-item">Campaign Strategy&nbsp;&amp;&nbsp;Execution</li>
+						<li class="list-group-item">Celebrity&nbsp;&amp;&nbsp;Talent Acquisition</li>
+						<li class="list-group-item">Communication Management</li>
+						<li class="list-group-item">Content Creation&nbsp;&amp;&nbsp;Marketing</li>
+						<li class="list-group-item">Design&nbsp;&amp;&nbsp;Creatives</li>
+						<li class="list-group-item">Digital&nbsp;&amp;&nbsp;Social Media PR</li>
 					</ul>
 				</div>
-				<div class="col-12 col-lg-5">
+				<div class="col-12 col-lg-6">
 					<ul class="list-group">
-						<li class="list-group-item">International PR</li>
-						<li class="list-group-item">Influencer Selection</li>
-						<li class="list-group-item">Public Imaging</li>
-						<li class="list-group-item">Executive Visibility</li>
-						<li class="list-group-item">Thought Leadership</li>
-						<li class="list-group-item">Original Production</li>
-						<li class="list-group-item">Partnerships & Integration</li>
-						<li class="list-group-item">Crisis Strategy & Response</li>
-						<li class="list-group-item">Other PR Services</li>
+						<li class="list-group-item">Editorial, Graphics&nbsp;&amp;&nbsp;Layout</li>
+						<li class="list-group-item">Film Development&nbsp;&amp;&nbsp;Promo</li>
+						<li class="list-group-item">Image&nbsp;&amp;&nbsp;Public Perception</li>
+						<li class="list-group-item">Marketing Partnerships&nbsp;&amp;&nbsp;Integration</li>
+						<li class="list-group-item">Media Placement (Local&nbsp;&amp;&nbsp;Internationl)</li>
+						<li class="list-group-item">Production&nbsp;&amp;&nbsp;Shoot Requirements</li>
+						<li class="list-group-item">Strategy&nbsp;&amp;&nbsp;Transformation</li>
+						<li class="list-group-item">Other Representation Service</li>
+						<li class="list-group-item balancer d-none d-lg-block">Others</li>
 					</ul>
 				</div>
 			</div>

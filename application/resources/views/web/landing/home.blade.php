@@ -56,7 +56,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'profile']) }}" class="page-cta ftra-medium text-white">PROFILE</a>
+	<a href="{{ route('menu', ['page_id' => 0]) }}" class="page-cta ftra-medium text-white">PROFILE</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -69,7 +69,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'services']) }}" class="page-cta ftra-medium text-white">SERVICES</a>
+	<a href="{{ route('menu', ['page_id' => 1]) }}" class="page-cta ftra-medium text-white">SERVICES</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -82,7 +82,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'network']) }}" class="page-cta ftra-medium text-white">NETWORK</a href=>
+	<a href="{{ route('menu', ['page_id' => 2]) }}" class="page-cta ftra-medium text-white">NETWORK</a href=>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -108,7 +108,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'experiential']) }}" class="page-cta ftra-medium text-white">EXPERIENTIAL</a>
+	<a href="{{ route('menu', ['page_id' => 4]) }}" class="page-cta ftra-medium text-white">EXPERIENTIAL</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 <section>
@@ -120,7 +120,7 @@
 			</p>
 		</div>
 	</div>
-	<a href="{{ route('menu', ['page' => 'connect']) }}" class="page-cta ftra-medium text-white">CONNECT</a>
+	<a href="{{ route('menu', ['page_id' => 5]) }}" class="page-cta ftra-medium text-white">CONNECT</a>
 	<button class="page-down-button text-white"><span class="ti-angle-down"></span></button>
 </section>
 @endsection

@@ -58,6 +58,16 @@ $(window).on("load", function () {
 	setTimeout(function() {
 		$('.quick-cover').hide();
 	}, 1000);
+
+	var index = new URLSearchParams(window.location.search).get("page_id");
+
+	toggleMenu(index);
+	setMenuPosition();
+
+	setTimeout(function () {
+		getCurrentButtonOffset();
+		moveScrollToMenu(index);
+	}, 1000);
 });
 
 function initMenu() {
