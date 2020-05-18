@@ -52,28 +52,24 @@
 				</div>
 				<div class="col-12 col-lg-5">
 					<ul class="list-group">
-						<li class="list-group-item">Activation&nbsp;&amp;&nbsp;Event PR</li>
+						<li class="list-group-item">Activation&nbsp;&amp;&nbsp;Event</li>
 						<li class="list-group-item">Amplification&nbsp;&amp;&nbsp;Reach</li>
-						<li class="list-group-item">Branding (Concept&nbsp;&amp;&nbsp;Design)</li>
-						<li class="list-group-item">Campaign Strategy&nbsp;&amp;&nbsp;Execution</li>
-						<li class="list-group-item">Celebrity&nbsp;&amp;&nbsp;Talent Acquisition</li>
-						<li class="list-group-item">Communication Management</li>
-						<li class="list-group-item">Content Creation&nbsp;&amp;&nbsp;Marketing</li>
-						<li class="list-group-item">Design&nbsp;&amp;&nbsp;Creatives</li>
-						<li class="list-group-item">Digital&nbsp;&amp;&nbsp;Social Media PR</li>
+						<li class="list-group-item">Brand Development</li>
+						<li class="list-group-item">Campaign Execution</li>
+						<li class="list-group-item">Celebrity Acquisition</li>
+						<li class="list-group-item">Content Creation</li>
+						<li class="list-group-item">Creative&nbsp;&amp;&nbsp;Design</li>
 					</ul>
 				</div>
 				<div class="col-12 col-lg-6">
 					<ul class="list-group">
-						<li class="list-group-item">Editorial, Graphics&nbsp;&amp;&nbsp;Layout</li>
-						<li class="list-group-item">Film Development&nbsp;&amp;&nbsp;Promo</li>
-						<li class="list-group-item">Image&nbsp;&amp;&nbsp;Public Perception</li>
-						<li class="list-group-item">Marketing Partnerships&nbsp;&amp;&nbsp;Integration</li>
-						<li class="list-group-item">Media Placement (Local&nbsp;&amp;&nbsp;Internationl)</li>
-						<li class="list-group-item">Production&nbsp;&amp;&nbsp;Shoot Requirements</li>
+						<li class="list-group-item">Creative Communication</li>
+						<li class="list-group-item">Digital&nbsp;&amp;&nbsp;Social Media</li>
+						<li class="list-group-item">Image&nbsp;&amp;&nbsp;Perception</li>
+						<li class="list-group-item">Marketing&nbsp;&amp;&nbsp;Partnership</li>
+						<li class="list-group-item">Media Placement</li>
 						<li class="list-group-item">Strategy&nbsp;&amp;&nbsp;Transformation</li>
 						<li class="list-group-item">Other Representation Service</li>
-						<li class="list-group-item balancer d-none d-lg-block">Others</li>
 					</ul>
 				</div>
 			</div>

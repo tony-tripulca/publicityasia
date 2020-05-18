@@ -48,7 +48,7 @@ body {
 .services.menu-content {
 	height: calc(200% - (((100% / 6) * 2) - 44px));
 	padding: 0;
-	font-size: 0.9rem;
+	font-size: 1.2rem;
 }
 
 .services.menu-content ul,
@@ -200,7 +200,7 @@ body {
 	.services.menu-content {
 		height: calc((100% - (100% / 6)) - 44px);
 		padding: 50px;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 	}
 
 	.services.menu-content .balancer {
@@ -270,7 +270,7 @@ body {
 	}
 
 	.services.menu-content {
-		font-size: 1.05rem;
+		font-size: 1.3rem;
 	}
 
 	.experiential.menu-content {
@@ -288,7 +288,7 @@ body {
 	}
 
 	.services.menu-content {
-		font-size: 1rem;
+		font-size: 1.4rem;
 	}
 
 	.experiential.menu-content {
@@ -333,7 +333,7 @@ body {
 	}
 
 	.services.menu-content {
-		font-size: 1.3rem;
+		font-size: 1.6rem;
 	}
 
 	.network.menu-content #article-carousel {
